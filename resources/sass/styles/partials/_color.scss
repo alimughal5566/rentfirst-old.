@@ -1,0 +1,22 @@
+@use 'colorVariable' as color;
+@use 'mixin' as mix;
+
+/*      Colors      */
+.color-white {
+    color: color.$white;
+}
+
+/*      /Colors      */
+
+/*      Backgrounds      */
+.bg-white {
+    background-color: color.$white !important;
+}
+
+/*      /Backgrounds      */
+
+/*      /Border-Color      */
+
+.border-gray {
+    @include mix.border-color(color.$gray);
+}

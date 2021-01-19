@@ -1,0 +1,19 @@
+/*      HEADER      */
+header .navbar .navbar-brand img {
+  max-width: 135px;
+}
+
+/*      /HEADER      */
+.page-header-wrapper {
+  height: 60px;
+}
+.page-header-wrapper .navbar-brand img {
+  max-width: 100px;
+}
+
+/* HOME */
+/*      Banner section      */
+/*      /Banner section      */
+/* /HOME */
+/*      FOOTER      */
+/*      /FOOTER      */

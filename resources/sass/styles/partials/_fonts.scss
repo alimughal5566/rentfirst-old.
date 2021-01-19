@@ -1,0 +1,208 @@
+@use 'fontVariable' as font;
+
+//// Font Family Classes Start
+//
+///* Poppin */
+//
+//.font-poppins-black {
+//  font-family: $font-poppins-black;
+//}
+//
+//.font-poppins-extrabold {
+//  font-family: $font-poppins-extrabold;
+//}
+//
+//.font-poppins-bold {
+//  font-family: $font-poppins-bold;
+//}
+//
+//.font-poppins-semibold {
+//  font-family: $font-poppins-semibold;
+//}
+//
+//.font-poppins-medium {
+//  font-family: $font-poppins-medium;
+//}
+//
+//.font-poppin {
+//  font-family: $font-poppins;
+//}
+//
+//.font-poppins-italic {
+//  font-family: $font-poppins-italic;
+//}
+//
+//.font-poppins-light {
+//  font-family: $font-poppins-light;
+//}
+//
+//.font-poppins-extralight {
+//  font-family: $font-poppins-extralight;
+//}
+//
+//.font-poppins-thin {
+//  font-family: $font-poppins-thin;
+//}
+//
+//
+///* SourceSansPro */
+//.font-sourcesanspro {
+//  font-family: $font-sourcesanspro;
+//}
+//
+//.font-sourcesanspro-semibold {
+//  font-family: $font-sourcesanspro-semibold;
+//}
+//
+//.font-sourcesanspro-bold {
+//  font-family: $font-sourcesanspro-bold;
+//}
+//
+//.font-sourcesanspro-black {
+//  font-family: $font-sourcesanspro-black;
+//}
+//
+//.font-sourcesanspro-italic {
+//  font-family: $font-sourcesanspro-italic;
+//}
+//
+//.font-sourcesanspro-light {
+//  font-family: $font-sourcesanspro-light;
+//}
+//
+//.font-sourcesanspro-extralight {
+//  font-family: $font-sourcesanspro-extralight;
+//}
+//
+///* Roboto */
+//.font-roboto-black {
+//  font-family: $font-roboto-black;
+//}
+//
+//.font-roboto-bold {
+//  font-family: $font-roboto-bold;
+//}
+//
+//.font-roboto-medium {
+//  font-family: $font-roboto-medium;
+//}
+//
+//.font-roboto-italic {
+//  font-family: $font-roboto-italic;
+//}
+//
+//.font-roboto {
+//  font-family: $font-roboto;
+//}
+//
+//.font-roboto-light {
+//  font-family: $font-roboto-light;
+//}
+//
+//.font-roboto-thin {
+//  font-family: $font-roboto-thin;
+//}
+//
+//// Font Family Classes End
+
+//  Font Weight Addition
+
+//.font-weight-medium {
+//    font-weight: 500 !important;
+//}
+//
+//.font-weight-semibold {
+//    font-weight: 600 !important;
+//}
+//
+//.font-weight-extrabold {
+//    font-weight: 800 !important;
+//}
+
+//  /Font Weight Addition
+
+//  Font Size Start
+
+@for $i from 0 through 100 {
+
+    .font-size-#{$i} {
+        font-size: #{$i/16}rem !important;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+    @for $i from 0 through 100 {
+
+        .font-size-sm-#{$i} {
+            font-size: #{$i/16}rem !important;
+        }
+
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    @for $i from 0 through 100 {
+
+        .font-size-md-#{$i} {
+            font-size: #{$i/16}rem !important;
+        }
+
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    @for $i from 0 through 100 {
+
+        .font-size-lg-#{$i} {
+            font-size: #{$i/16}rem !important;
+        }
+
+    }
+
+}
+
+/* Customized Media Queries (min Width, 1024px and up) */
+@media (min-width: 1024px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    @for $i from 0 through 100 {
+
+        .font-size-xl-#{$i} {
+            font-size: #{$i/16}rem !important;
+        }
+
+    }
+
+}
+
+/* Extra extra large devices (1440px and up)*/
+@media (min-width: 1440px) {
+
+    @for $i from 0 through 100 {
+
+        .font-size-xxl-#{$i} {
+            font-size: #{$i/16}rem !important;
+        }
+
+    }
+
+}
+
+/* Extra extra extra large devices (4K and up)*/
+@media (min-width: 2160px) {
+
+}
+
+//  /Font Size End

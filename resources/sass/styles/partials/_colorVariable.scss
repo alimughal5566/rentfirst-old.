@@ -1,0 +1,58 @@
+$white: rgba(255, 255, 225, 1);
+$white-light: rgba(255, 255, 225, 0.75);
+$white-lighter: rgba(255, 255, 225, 0.5);
+$white-lightest: rgba(255, 255, 225, 0.25);
+
+$black: rgba(6, 6, 6, 1);
+$black-light: rgba(6, 6, 6, 0.75);
+$black-lighter: rgba(6, 6, 6, 0.5);
+$black-lightest: rgba(6, 6, 6, 0.25);
+
+$gray: #ced4da;
+$gray1: #dee2e6;
+$gray2: #f3f4f9;
+$gray3: #f5f5f5;
+$gray4: #495057;
+$gray-light: rgba(206, 212, 218, 1);
+$gray-light-light: rgba(206, 212, 218, 0.75);
+$gray-light-lighter: rgba(206, 212, 218, 0.5);
+$gray-light-lightest: rgba(206, 212, 218, 0.25);
+
+
+$primary: rgba(105, 209, 97, 1);
+$primary-light: rgba(105, 209, 97, 0.75);
+$primary-lighter: rgba(105, 209, 97, 0.5);
+$primary-lightest: rgba(105, 209, 97, 0.25);
+$primary-grad: linear-gradient(to right, #69B661, #69E961);
+
+$color-white: $white, $white-light, $white-lighter, $white-lightest;
+$color-black: $black, $black-light, $black-lighter, $black-lightest;
+$color-gray: $gray, $gray1, $gray2, $gray3, $gray4, $gray-light, $gray-light-light, $gray-light-lighter, $gray-light-lightest;
+
+$secondary: rgba(223, 152, 51, 1);
+$secondary-light: rgba(223, 152, 51, 0.75);
+$secondary-lighter: rgba(223, 152, 51, 0.5);
+$secondary-lightest: rgba(223, 152, 51, 0.25);
+$color-black: $secondary, $secondary-light, $secondary-lighter, $secondary-lightest;
+
+$tertiary: #2b2b2b;
+$tertiary-light: rgba(43, 43, 43, 0.75);
+$tertiary-lighter: rgba(43, 43, 43, 0.5);
+$tertiary-lightest: rgba(43, 43, 43, 0.25);
+$color-tertiary: $tertiary, $tertiary-light, $tertiary-lighter, $tertiary-lightest;
+
+$dark-blue: rgba(19, 15, 73, 1);
+$dark-blue-light: rgba(19, 15, 73, 0.75);
+$dark-blue-lighter: rgba(19, 15, 73, 0.5);
+$dark-blue-lightest: rgba(19, 15, 73, 0.25);
+$color-dark-blue: $dark-blue, $dark-blue-light, $dark-blue-lighter, $dark-blue-lightest;
+
+$green: #2ca94f;
+$green-light: rgba(44, 169, 79, 0.75);
+$green-lighter: rgba(44, 169, 79, 0.5);
+$green-lightest: rgba(44, 169, 79, 0.25);
+
+$orange: #FF9F43;
+$orange-light: rgba(255, 159, 67, 0.75);
+$orange-lighter: rgba(255, 159, 67, 0.5);
+$orange-lightest: rgba(255, 159, 67, 0.25);

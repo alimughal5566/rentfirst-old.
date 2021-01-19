@@ -16,6 +16,14 @@ mix.js('resources/js/app.js', 'public/js');
 mix.sass('resources/sass/app.scss', 'public/css');
 mix.sass('resources/sass/app.rtl.scss', 'public/css');
 
+mix.sass('resources/fonts/fawesome/scss/fontawesome.scss', 'public/assets/custom/css/fontawesome.css')
+	.sass('resources/sass/styles/helpers/normalize.scss', 'public/assets/custom/css/normalize.css')
+	.sass('resources/sass/styles/helpers/animate.scss', 'public/assets/custom/css/animate.css')
+	.sass('resources/sass/common.scss', 'public/assets/custom/css/common.css')
+	.sass('resources/sass/defaults.scss', 'public/assets/custom/css/defaults.css')
+	.sass('resources/sass/main.scss', 'public/assets/custom/css/main.css')
+	.sass('resources/sass/medias.scss', 'public/assets/custom/css/responsive.css');
+
 mix.options({ processCssUrls: false });
 
 /* Combine CSS */

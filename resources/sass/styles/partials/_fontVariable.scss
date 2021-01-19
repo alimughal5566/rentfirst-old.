@@ -1,0 +1,190 @@
+//@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap");
+
+////  Font Family Declare Start
+//
+//@font-face {
+//  font-family: "Poppins";
+//  src: url("../../assets/fonts/Poppins-Regular.ttf");
+//  font-weight: normal;
+//  font-style: normal;
+//  font-stretch: normal;
+//}
+//
+//@font-face {
+//  font-family: "Poppins-SemiBold";
+//  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-Bold";
+//  src: url("../../assets/fonts/Poppins-Bold.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-ExtraBold";
+//  src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-Black";
+//  src: url("../../assets/fonts/Poppins-Black.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-Italic";
+//  src: url("../../assets/fonts/Poppins-Italic.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-Medium";
+//  src: url("../../assets/fonts/Poppins-Medium.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-Thin";
+//  src: url("../../assets/fonts/Poppins-Thin.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-Light";
+//  src: url("../../assets/fonts/Poppins-Light.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Poppins-ExtraLight";
+//  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+//}
+//
+///*  SourceSansPro   */
+//
+//@font-face {
+//  font-family: "SourceSansPro-Regular";
+//  src: url("../../assets/fonts/SourceSansPro-Regular.ttf");
+//}
+//
+//@font-face {
+//  font-family: "SourceSansPro-Bold";
+//  src: url("../../assets/fonts/SourceSansPro-Bold.ttf");
+//}
+//
+//@font-face {
+//  font-family: "SourceSansPro-SemiBold";
+//  src: url("../../assets/fonts/SourceSansPro-SemiBold.ttf");
+//}
+//
+//@font-face {
+//  font-family: "SourceSansPro-Black";
+//  src: url("../../assets/fonts/SourceSansPro-Black.ttf");
+//}
+//
+//@font-face {
+//  font-family: "SourceSansPro-Italic";
+//  src: url("../../assets/fonts/SourceSansPro-Italic.ttf");
+//}
+//
+//@font-face {
+//  font-family: "SourceSansPro-Light";
+//  src: url("../../assets/fonts/SourceSansPro-Light.ttf");
+//}
+//
+//@font-face {
+//  font-family: "SourceSansPro-ExtraLight";
+//  src: url("../../assets/fonts/SourceSansPro-ExtraLight.ttf");
+//}
+//
+///*  Roboto   */
+//@font-face {
+//  font-family: "Roboto-Regular";
+//  src: url("../../assets/fonts/Roboto-Regular.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Roboto-Bold";
+//  src: url("../../assets/fonts/Roboto-Bold.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Roboto-Black";
+//  src: url("../../assets/fonts/Roboto-Black.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Roboto-Italic";
+//  src: url("../../assets/fonts/Roboto-Italic.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Roboto-Medium";
+//  src: url("../../assets/fonts/Roboto-Medium.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Roboto-Thin";
+//  src: url("../../assets/fonts/Roboto-Thin.ttf");
+//}
+//
+//@font-face {
+//  font-family: "Roboto-Light";
+//  src: url("../../assets/fonts/Roboto-Light.ttf");
+//}
+//
+////  Font Family Declare End
+//
+//// Font Family Variable Start
+//
+///* Poppin */
+//
+//$font-poppins-black: Poppins-Black, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-extrabold: Poppins-ExtraBold, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-bold: Poppins-Bold, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-semibold: Poppins-SemiBold, Arial, Helvetica, sans-serif;
+//
+//$font-poppins: Poppins, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-italic: Poppins-Italic, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-medium: Poppins-Medium, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-light: Poppins-Light, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-extralight: Poppins-ExtraLight, Arial, Helvetica, sans-serif;
+//
+//$font-poppins-thin: Poppins-Thin, Arial, Helvetica, sans-serif;
+//
+///*  SourceSansPro */
+//
+//$font-sourcesanspro-black: SourceSansPro-Black, Arial, Helvetica, sans-serif;
+//
+//$font-sourcesanspro-semibold: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+//
+//$font-sourcesanspro-bold: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+//
+//$font-sourcesanspro: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+//
+//$font-sourcesanspro-italic: SourceSansPro-Italic, Arial, Helvetica, sans-serif;
+//
+//$font-sourcesanspro-light: SourceSansPro-Light, Arial, Helvetica, sans-serif;
+//
+//$font-sourcesanspro-extralight: SourceSansPro-ExtraLight, Arial, Helvetica, sans-serif;
+//
+///*  Roboto */
+//
+//$font-roboto-italic: Roboto-Italic, Arial, Helvetica, sans-serif;
+//
+//$font-roboto-black: Roboto-Black, Arial, Helvetica, sans-serif;
+//
+//$font-roboto-bold: Roboto-Bold, Arial, Helvetica, sans-serif;
+//
+//$font-roboto-medium: Roboto-medium, Arial, Helvetica, sans-serif;
+//
+//$font-roboto: Roboto-Regular, Arial, Helvetica, sans-serif;
+//
+//$font-roboto-light: Roboto-Light, Arial, Helvetica, sans-serif;
+//
+//$font-roboto-thin: Roboto-Thin, Arial, Helvetica, sans-serif;
+//
+//// Font Family Variable End
+//
