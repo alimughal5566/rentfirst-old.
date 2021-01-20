@@ -40,7 +40,7 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
     <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/animate.css')}}">
 
     <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/fontawesome.css')}}">
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/fontawesome.css')}}">--}}
 
     <title>{!! MetaTag::get('title') !!}</title>
     {!! MetaTag::tag('description') !!}{!! MetaTag::tag('keywords') !!}

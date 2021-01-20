@@ -1,5 +1,5 @@
 //  Border Start
-@for $i from 0 through 50 {
+@for $i from 0 through 25 {
 
     .border-width-#{$i} {
         border-width: $i*1px !important;

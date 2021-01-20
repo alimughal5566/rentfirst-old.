@@ -1,6 +1,6 @@
 //  Width & Height Start
 
-@for $i from 0 through 500 {
+@for $i from 0 through 100 {
   // pixels
   .wx-#{$i} {
     width: $i*1px !important;
@@ -112,7 +112,7 @@
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
-  @for $i from 0 through 500 {
+  @for $i from 0 through 100 {
     // pixels
     .wx-sm-#{$i} {
       width: $i*1px !important;
@@ -226,7 +226,7 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  @for $i from 0 through 500 {
+  @for $i from 0 through 100 {
     // pixels
     .wx-md-#{$i} {
       width: $i*1px !important;
@@ -340,7 +340,7 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-  @for $i from 0 through 500 {
+  @for $i from 0 through 100 {
     // pixels
     .wx-lg-#{$i} {
       width: $i*1px !important;
@@ -458,7 +458,7 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-  @for $i from 0 through 500 {
+  @for $i from 0 through 100 {
     // pixels
     .wx-xl-#{$i} {
       width: $i*1px !important;
@@ -572,7 +572,7 @@
 /* Extra extra large devices (1400px and up)*/
 @media (min-width: 1400px) {
 
-  @for $i from 0 through 500 {
+  @for $i from 0 through 100 {
     // pixels
     .wx-xxl-#{$i} {
       width: $i*1px !important;
