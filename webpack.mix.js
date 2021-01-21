@@ -70,7 +70,7 @@ mix.combine([
 mix.combine([
     'public/assets/js/jquery/1.11.1/jquery.min.js',
     'public/assets/plugins/jqueryui/1.9.2/jquery-ui.min.js',
-    /* 'public/assets/js/popper.min.js', */
+    // /* 'public/assets/js/popper.min.js', */
     /* 'public/assets/bootstrap/js/bootstrap.min.js', */
     /* Bundled JS files (bootstrap.bundle.js and minified bootstrap.bundle.min.js) include Popper, but not jQuery. */
     'public/assets/bootstrap/js/bootstrap.bundle.min.js',

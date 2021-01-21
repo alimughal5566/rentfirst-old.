@@ -25,7 +25,7 @@ if (!isset($cacheExpiration)) {
 							<?php
 							foreach($featured->posts as $key => $post):
 								if (empty($countries) or !$countries->has($post->country_code)) continue;
-			
+
 								// Picture setting
 								$pictures = \App\Models\Picture::where('post_id', $post->id)->orderBy('position')->orderBy('id');
 								if ($pictures->count() > 0) {
@@ -33,7 +33,7 @@ if (!isset($cacheExpiration)) {
 								} else {
 									$postImg = imgUrl(config('larapen.core.picture.default'));
 								}
-			
+
 								// Category
 								$cacheId = 'category.' . $post->category_id . '.' . config('app.locale');
 								$liveCat = \Illuminate\Support\Facades\Cache::remember($cacheId, $cacheExpiration, function () use ($post) {
@@ -47,13 +47,13 @@ if (!isset($cacheExpiration)) {
 											<img class="img-fluid" src="{{ $postImg }}" alt="{{ $post->title }}" style="border: 1px solid #e7e7e7; margin-top: 2px;">
 										</span>
 										<span class="item-name">{{ \Illuminate\Support\Str::limit($post->title, 70) }}</span>
-										
+
 										@if (config('plugins.reviews.installed'))
 											@if (view()->exists('reviews::ratings-list'))
 												@include('reviews::ratings-list')
 											@endif
 										@endif
-										
+
 										<span class="price">
 											@if (isset($liveCat->type))
 												@if (!in_array($liveCat->type, ['not-salable']))
