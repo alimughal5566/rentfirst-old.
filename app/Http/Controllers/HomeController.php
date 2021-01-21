@@ -97,7 +97,6 @@ class HomeController extends FrontController
 		
 		// Get SEO
 		$this->setSeo();
-		
 		return view('home.index', $data);
 	}
 	

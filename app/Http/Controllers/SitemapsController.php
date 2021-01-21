@@ -81,7 +81,8 @@ class SitemapsController extends FrontController
 			
 			Sitemap::addSitemap(localUrl($country, $country->icode . '/sitemaps.xml'));
 		}
-		
+
+
 		return Sitemap::index();
 	}
 	
@@ -180,12 +181,15 @@ class SitemapsController extends FrontController
 		
 		// Categories
 		$cacheId = 'categories.' . $country->locale . '.all';
+
 		$cats = Cache::remember($cacheId, $this->cacheExpiration, function () use ($country) {
 			$cats = Category::transIn($country->locale)->orderBy('lft')->get();
 			
 			return $cats;
+
 		});
-		
+
+
 		if ($cats->count() > 0) {
 			$cats = collect($cats)->keyBy('translation_of');
 			$cats = $subCats = $cats->groupBy('parent_id');

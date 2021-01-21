@@ -26,6 +26,7 @@ $logoLabel = '';
 if (getSegment(1) != trans('routes.countries')) {
     $logoLabel = config('settings.app.app_name') . ((!empty(config('country.name'))) ? ' ' . config('country.name') : '');
 }
+$main=\App\Models\Category::where('parent_id',0)->get();
 ?>
 <div class="header">
     <nav class="header-main navbar fixed-top navbar-site navbar-light bg-light navbar-expand-md" role="navigation">
@@ -66,6 +67,7 @@ if (getSegment(1) != trans('routes.countries')) {
                     @endif
                 @endif
             </div>
+{{--@dd($main->name);--}}
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
@@ -192,5 +194,18 @@ if (getSegment(1) != trans('routes.countries')) {
         </div>
     </nav>
     <div class="header-navigation">
+
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                @foreach($main as $main_category)
+                        <a class="dropdown-item" >{{$main_category->name}}</a>
+                @endforeach
+            </div>
+        </div>
+
     </div>
 </div>
