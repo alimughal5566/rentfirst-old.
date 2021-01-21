@@ -79,13 +79,13 @@ if (getSegment(1) != trans('routes.countries')) {
                                         data-placement="{{ (config('lang.direction') == 'rtl') ? 'bottom' : 'right' }}" {!! $multiCountriesLabel !!}>
                                         @if (isset($multiCountriesIsEnabled) and $multiCountriesIsEnabled)
                                             <a href="#selectCountry" data-toggle="modal" class="nav-link">
-                                                <img class="flag-icon"
+                                                <img class="flag-icon" alt=""
                                                      src="{{ url('images/flags/32/' . config('country.icode') . '.png') . getPictureVersion() }}">
                                                 <span class="caret hidden-sm"></span>
                                             </a>
                                         @else
                                             <a style="cursor: default;">
-                                                <img class="flag-icon no-caret"
+                                                <img class="flag-icon no-caret" alt=""
                                                      src="{{ url('images/flags/32/' . config('country.icode') . '.png') . getPictureVersion() }}">
                                             </a>
                                         @endif

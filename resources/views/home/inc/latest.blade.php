@@ -22,7 +22,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
 							<span class="title-3">{!! t('Home - Latest Ads') !!}</span>
 							<?php $attr = ['countryCode' => config('country.icode')]; ?>
 							<a href="{{ lurl(trans('routes.v-search', $attr), $attr) }}" class="sell-your-item">
-								{{ t('View more') }} <i class="icon-th-list"></i>
+								{{ t('Load more') }} <i class="icon-th-list"></i>
 							</a>
 						</h2>
 					</div>

@@ -1,15 +1,13 @@
 @if (isset($categoriesOptions) and isset($categoriesOptions['type_of_display']))
 	@include('home.inc.spacer')
 	<div class="container">
-		<div class="col-xl-12 content-box layout-section">
+		<div class="col-xl-12 content-box layout-section border-0">
 			<div class="row row-featured row-featured-category">
 				<div class="col-xl-12 box-title no-border">
 					<div class="inner">
 						<h2>
 							<span class="title-3">{{ t('Browse by') }} <span style="font-weight: bold;">{{ t('Category') }}</span></span>
-							<a href="{{ \App\Helpers\UrlGen::sitemap() }}" class="sell-your-item">
-								{{ t('View more') }} <i class="icon-th-list"></i>
-							</a>
+
 						</h2>
 					</div>
 				</div>
@@ -37,7 +35,7 @@
 					@endif
 					
 				@elseif (in_array($categoriesOptions['type_of_display'], ['cc_normal_list', 'cc_normal_list_s']))
-					
+
 					<div style="clear: both;"></div>
 					<?php $styled = ($categoriesOptions['type_of_display'] == 'cc_normal_list_s') ? ' styled' : ''; ?>
 					
@@ -141,7 +139,12 @@
 					@endif
 					
 				@endif
-		
+
+				<div class="load-more">
+					<a href="{{ \App\Helpers\UrlGen::sitemap() }}" class="sell-your-item">
+						{{ t('View more') }} <i class="icon-th-list"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
