@@ -16,6 +16,38 @@
 
     .search-row {
       background-color: transparent;
+
+      .search-col {
+        @include d-flex;
+        @include align-items-center;
+
+        i {
+          font-size: 1.25rem;
+          position: absolute;
+          left: 0.75rem;
+        }
+
+        &:first-child {
+          border-radius: unset !important;
+        }
+
+        .form-control {
+          border: 0.3rem solid #69D161 !important;
+          border-radius: 1.5rem !important;
+
+          &:hover, &:focus, &:active, &.active {
+          }
+
+        }
+
+        .btn-search {
+          border-radius: 1.25rem !important;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+
+      }
+
     }
 
   }
@@ -33,18 +65,160 @@
 
     .item-list {
       width: 24.5%;
-      border: none;
+      border: 1px solid #ced4da;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 0.35rem 0.15rem rgba(0, 0, 0, 0.2);
+
+      &:hover, &:focus, &:active {
+        background: transparent;
+
+        .photobox {
+
+          .add-image {
+
+            a {
+
+              &.make-favorite {
+                width: auto;
+                border-radius: 0.25rem;
+
+                &:hover, &:focus, &:active, &.active {
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
 
       .photobox {
+        box-shadow: 0 0.35rem 0.15rem rgba(0, 0, 0, 0.2);
+        border-radius: 1.5rem;
+        overflow: hidden;
+        display: block;
 
         .add-image {
 
           a {
 
-            img {
+            &.make-favorite {
+              margin-bottom: 0;
+              position: absolute;
+              right: 0.6rem;
+              top: 2rem;
+              border-radius: 50%;
+              width: 25px;
+              height: 25px;
+              @include d-flex;
+              @include align-items-center;
+              @include justify-content-center;
+
+              &:hover, &:focus, &:active, &.active {
+                width: auto;
+                border-radius: 0.25rem;
+              }
 
             }
 
+            &.img-wrap {
+
+              img {
+                border-radius: 1.5rem;
+              }
+
+            }
+
+
+          }
+
+        }
+
+      }
+
+      .add-desc-box {
+
+        .items-details {
+
+          .price-box {
+
+          }
+
+          .add-title {
+
+            a {
+              color: #636363;
+
+              &:hover, &:focus, &:active {
+
+              }
+
+            }
+
+          }
+
+          .info-row {
+
+            span {
+
+              a {
+                color: #69D161;
+
+                &:hover, &:focus, &:active {
+                  color: #636363;
+                }
+
+              }
+
+              &.item-location {
+
+                i {
+                  color: #69D161;
+                  font-size: 1rem;
+                }
+
+                a {
+                  color: #636363;
+
+                  &:hover, &:focus, &:active {
+
+                  }
+
+                }
+
+              }
+
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .load-more {
+
+      a {
+
+        &.btn {
+          background: linear-gradient(to right, #69E961, #69B661);
+          color: #fff;
+          font-size: 1.25rem;
+          border-radius: 1.5rem;
+          text-transform: uppercase;
+          @include plain-all;
+
+          &:hover, &:focus, &:active {
+            color: #69D161;
+            background: #fff;
+            border-color: #69D161;
           }
 
         }
