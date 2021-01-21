@@ -16,10 +16,10 @@ const mix = require('laravel-mix');
 // mix.sass('resources/sass/app.scss', 'public/css');
 // mix.sass('resources/sass/app.rtl.scss', 'public/css');
 
-// .sass('resources/fonts/fawesome/scss/fontawesome.scss', 'public/assets/custom/css/fontawesome.css')
+// .sass('resources/fonts/fawesome/scss/all.scss', 'public/assets/custom/css/fontawesome.css')
+// .sass('resources/sass/styles/helpers/animate.scss', 'public/assets/custom/css/animate.css')
 
 mix.sass('resources/sass/styles/helpers/normalize.scss', 'public/assets/custom/css/normalize.css')
-    .sass('resources/sass/styles/helpers/animate.scss', 'public/assets/custom/css/animate.css')
     .sass('resources/sass/common.scss', 'public/assets/custom/css/common.css')
     .sass('resources/sass/defaults.scss', 'public/assets/custom/css/defaults.css')
     .sass('resources/sass/main.scss', 'public/assets/custom/css/main.css')
@@ -46,22 +46,22 @@ mix.combine([
 ], 'public/css/app.css');
 
 /* Combine RTL CSS */
-mix.combine([
-    'public/css/app.rtl.css',
-    'public/assets/bootstrap/css/bootstrap.rtl.css',
-    'public/assets/plugins/select2/css/select2.min.css',
-    'public/assets/plugins/tag-it/css/jquery.tagit.css',
-    'public/assets/plugins/tag-it/css/tagit.ui-zendesk.css',
-    'public/assets/css/rtl/style.css',
-    'public/assets/css/rtl/style-main.css',
-    'public/assets/css/skins/skin-blue.css',
-    'public/assets/css/skins/skin-green.css',
-    'public/assets/css/skins/skin-red.css',
-    'public/assets/css/skins/skin-yellow.css',
-    'public/assets/plugins/owlcarousel/assets/owl.carousel.min.css',
-    'public/assets/plugins/owlcarousel/assets/owl.theme.default.min.css',
-    'public/assets/css/flags/flags.min.css'
-], 'public/css/app.rtl.css');
+// mix.combine([
+//     'public/css/app.rtl.css',
+//     'public/assets/bootstrap/css/bootstrap.rtl.css',
+//     'public/assets/plugins/select2/css/select2.min.css',
+//     'public/assets/plugins/tag-it/css/jquery.tagit.css',
+//     'public/assets/plugins/tag-it/css/tagit.ui-zendesk.css',
+//     'public/assets/css/rtl/style.css',
+//     'public/assets/css/rtl/style-main.css',
+//     'public/assets/css/skins/skin-blue.css',
+//     'public/assets/css/skins/skin-green.css',
+//     'public/assets/css/skins/skin-red.css',
+//     'public/assets/css/skins/skin-yellow.css',
+//     'public/assets/plugins/owlcarousel/assets/owl.carousel.min.css',
+//     'public/assets/plugins/owlcarousel/assets/owl.theme.default.min.css',
+//     'public/assets/css/flags/flags.min.css'
+// ], 'public/css/app.rtl.css');
 
 /* Combine JS */
 mix.combine([

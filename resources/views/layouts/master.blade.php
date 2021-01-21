@@ -1,16 +1,3 @@
-{{--
- * LaraClassified - Classified Ads Web Application
- * Copyright (c) BedigitCom. All Rights Reserved
- *
- * Website: http://www.bedigit.com
- *
- * LICENSE
- * -------
- * This software is furnished under a license and may be used and copied
- * only in accordance with the terms of such license and with the inclusion
- * of the above copyright notice. If you Purchased from Codecanyon,
- * Please read the full License from here - http://codecanyon.net/licenses/standard
---}}
 <?php
 $rawFullUrl = url(\Illuminate\Support\Facades\Request::getRequestUri());
 $fullUrl = rawurldecode($rawFullUrl);
@@ -37,10 +24,12 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
 
     <!-- Common -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/normalize.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/animate.css')}}">
 
     <!-- Fonts -->
 {{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/fontawesome.css')}}">--}}
+
+
+        <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/fontawesome/css/all.css')}}">
 
     <title>{!! MetaTag::get('title') !!}</title>
     {!! MetaTag::tag('description') !!}{!! MetaTag::tag('keywords') !!}
