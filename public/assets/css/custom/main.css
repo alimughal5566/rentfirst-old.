@@ -44,6 +44,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+#homepage .wide-intro .search-row {
+  background-color: transparent;
+}
 
 /*      /Banner section      */
 /* /HOME */

@@ -19,7 +19,6 @@ const mix = require('laravel-mix');
 // .sass('resources/fonts/fawesome/scss/all.scss', 'public/assets/custom/css/fontawesome.css')
 // .sass('resources/sass/styles/helpers/animate.scss', 'public/assets/custom/css/animate.css')
 
-mix.js('resources/js/custom.js', 'public/assets/js/custom/custom.js');
 
 mix.sass('resources/sass/styles/helpers/normalize.scss', 'public/assets/css/custom/normalize.css')
     .sass('resources/sass/dimensions.scss', 'public/assets/css/custom/dimensions.css')
