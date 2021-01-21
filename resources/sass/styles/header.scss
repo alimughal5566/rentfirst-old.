@@ -1,3 +1,7 @@
+/*      MIXINS      */
+@import "partials/mixin";
+/*      /MIXINS      */
+
 /*      HEADER      */
 #wrapper {
   padding-top: 0 !important;
@@ -46,8 +50,71 @@
   }
 
   .header-navigation {
+    @include d-flex;
+    @include align-items-center;
     min-height: 50px;
     color: #fff;
+
+    .dropdown {
+
+      .dropdown-toggle {
+        background: transparent;
+        border: transparent;
+        font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;
+      }
+
+      .dropdown-menu {
+        border-radius: 2rem;
+
+        .vertical-menu {
+
+          .main-item {
+
+            & > a {
+
+              &.dropdown-item {
+                color: #69D161;
+
+                &:hover, &:focus, &:active, &.active {
+                  background: transparent;
+                }
+
+              }
+
+            }
+
+            .sub-menu {
+
+              .submenu-item {
+
+                a {
+
+                  &.dropdown-item {
+                    color: #636363;
+
+                    &:hover, &:focus, &:active, &.active {
+                      background: transparent;
+                      color: #69D161;
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+
+        }
+
+      }
+
+    }
+
+
   }
 
 }

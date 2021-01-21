@@ -1,3 +1,7 @@
+/*      MIXINS      */
+/*      VARIABLES      */
+/*      VARIABLES      */
+/*      /MIXINS      */
 /*      HEADER      */
 #wrapper {
   padding-top: 0 !important;
@@ -29,8 +33,31 @@
   margin-bottom: 0;
 }
 .header .header-navigation {
+  display: flex;
+  align-items: center;
   min-height: 50px;
   color: #fff;
+}
+.header .header-navigation .dropdown .dropdown-toggle {
+  background: transparent;
+  border: transparent;
+  font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;
+}
+.header .header-navigation .dropdown .dropdown-menu {
+  border-radius: 2rem;
+}
+.header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item > a.dropdown-item {
+  color: #69D161;
+}
+.header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item > a.dropdown-item:hover, .header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item > a.dropdown-item:focus, .header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item > a.dropdown-item:active, .header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item > a.dropdown-item.active {
+  background: transparent;
+}
+.header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item .sub-menu .submenu-item a.dropdown-item {
+  color: #636363;
+}
+.header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item .sub-menu .submenu-item a.dropdown-item:hover, .header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item .sub-menu .submenu-item a.dropdown-item:focus, .header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item .sub-menu .submenu-item a.dropdown-item:active, .header .header-navigation .dropdown .dropdown-menu .vertical-menu .main-item .sub-menu .submenu-item a.dropdown-item.active {
+  background: transparent;
+  color: #69D161;
 }
 
 /*      /HEADER      */
@@ -38,6 +65,10 @@
   height: 60px;
 }
 
+/*      MIXINS      */
+/*      VARIABLES      */
+/*      VARIABLES      */
+/*      /MIXINS      */
 /* HOME */
 /*      Banner section      */
 #homepage .wide-intro {
@@ -49,6 +80,15 @@
 }
 
 /*      /Banner section      */
+.row-featured-category .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.row-featured-category .category-list .item-list {
+  width: 24.5%;
+  border: none;
+}
 /* /HOME */
 /*      FOOTER      */
 footer .footer-content {

@@ -1,3 +1,7 @@
+/*      MIXINS      */
+@import "partials/mixin";
+/*      /MIXINS      */
+
 /* HOME */
 
 /*      Banner section      */
@@ -19,5 +23,38 @@
 }
 
 /*      /Banner section      */
+
+.row-featured-category {
+
+  .category-list {
+    @include d-flex;
+    @include flex-wrap;
+    @include justify-content-around;
+
+    .item-list {
+      width: 24.5%;
+      border: none;
+
+      .photobox {
+
+        .add-image {
+
+          a {
+
+            img {
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
 
 /* /HOME */
