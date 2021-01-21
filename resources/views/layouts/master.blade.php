@@ -108,10 +108,10 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
     @endif
 
 <!-- Styles -->
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/common.css')}}?{{ time() }}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/defaults.css')}}?{{ time() }}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/main.css')}}?{{ time() }}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/responsive.css')}}?{{ time() }}">--}}
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/common.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/defaults.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/main.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/responsive.css')}}?{{ time() }}">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

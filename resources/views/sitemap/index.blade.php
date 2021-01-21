@@ -40,11 +40,11 @@
 							</div>
 						</div>
 					@endif
-					
+
 					@include('home.inc.spacer')
 					<h1 class="text-center title-1"><strong>{{ t('Sitemap') }}</strong></h1>
 					<hr class="center-block small mt-0">
-						
+
 					<div class="col-xl-12">
 						<div class="content-box">
 							<div class="row-featured-category">
@@ -53,18 +53,18 @@
 										<span class="title-3" style="font-weight: bold;">{{ t('List of Categories and Sub-categories') }}</span>
 									</h2>
 								</div>
-								
+
 								<div class="col-xl-12">
 									<div class="list-categories-children styled">
 										<div class="row">
 											@foreach ($cats as $key => $col)
 												<div class="col-md-4 col-sm-4 {{ (count($cats) == $key+1) ? 'last-column' : '' }}">
 													@foreach ($col as $iCat)
-														
+
 														<?php
 															$randomId = '-' . substr(uniqid(rand(), true), 5, 5);
 														?>
-														
+
 														<div class="cat-list">
 															<h3 class="cat-title rounded">
 																<a href="{{ \App\Helpers\UrlGen::category($iCat) }}">
@@ -117,7 +117,7 @@
 											</h2>
 										</div>
 									</div>
-									
+
 									<div class="col-xl-12">
 										<div class="list-categories-children">
 											<div class="row">
@@ -141,9 +141,9 @@
 					@endif
 
 				</div>
-				
+
 				@include('layouts.inc.social.horizontal')
-				
+
 			</div>
 		</div>
 	</div>

@@ -29,7 +29,7 @@ mix.options({processCssUrls: false});
 
 /* Combine CSS */
 mix.combine([
-    'public/css/app.css',
+    // 'public/css/app.css',
     'public/assets/bootstrap/css/bootstrap.min.css',
     'public/assets/plugins/select2/css/select2.min.css',
     'public/assets/plugins/tag-it/css/jquery.tagit.css',
@@ -71,7 +71,7 @@ mix.combine([
     /* 'public/assets/bootstrap/js/bootstrap.min.js', */
     /* Bundled JS files (bootstrap.bundle.js and minified bootstrap.bundle.min.js) include Popper, but not jQuery. */
     'public/assets/bootstrap/js/bootstrap.bundle.min.js',
-    'public/js/app.js',
+    // 'public/js/app.js',
     'public/assets/js/jquery.matchHeight-min.js',
     'public/assets/plugins/jquery.fs.scroller/jquery.fs.scroller.min.js',
     'public/assets/plugins/select2/js/select2.full.min.js',
