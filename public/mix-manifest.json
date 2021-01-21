@@ -1,9 +1,12 @@
 {
-    "/assets/custom/css/normalize.css": "/assets/custom/css/normalize.css?id=64b2b4fa42c7d558d735",
-    "/assets/custom/css/common.css": "/assets/custom/css/common.css?id=44b92936f56a6eab3ee8",
-    "/assets/custom/css/defaults.css": "/assets/custom/css/defaults.css?id=7ca00818578ce75ad343",
-    "/assets/custom/css/main.css": "/assets/custom/css/main.css?id=5b59611096b76f35060e",
-    "/assets/custom/css/responsive.css": "/assets/custom/css/responsive.css?id=69c55e89c491c994d287",
+    "/assets/js/custom/custom.js": "/assets/js/custom/custom.js?id=a38caec32a7f92265f5d",
+    "/assets/css/custom/normalize.css": "/assets/css/custom/normalize.css?id=dc3fdf421082397209e4",
+    "/assets/css/custom/dimensions.css": "/assets/css/custom/dimensions.css?id=6fbc3712cc6867916e55",
+    "/assets/css/custom/rotations.css": "/assets/css/custom/rotations.css?id=f47e93410b921ec504ac",
+    "/assets/css/custom/common.css": "/assets/css/custom/common.css?id=b07ae516bd11070d1306",
+    "/assets/css/custom/defaults.css": "/assets/css/custom/defaults.css?id=dc60bbde36b78d41ed2c",
+    "/assets/css/custom/main.css": "/assets/css/custom/main.css?id=acfc9237b6ba41fcc38e",
+    "/assets/css/custom/responsive.css": "/assets/css/custom/responsive.css?id=487aa1acdd67c5a40275",
     "/css/app.css": "/css/app.css?id=86f447399ae4c6e46228",
     "/js/app.js": "/js/app.js?id=2cddee078b0aaf09c52c"
 }

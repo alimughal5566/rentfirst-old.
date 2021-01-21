@@ -7,7 +7,6 @@
 					<div class="inner">
 						<h2>
 							<span class="title-3">{{ t('Browse by') }} <span style="font-weight: bold;">{{ t('Category') }}</span></span>
-
 						</h2>
 					</div>
 				</div>
