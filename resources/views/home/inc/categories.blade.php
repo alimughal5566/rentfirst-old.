@@ -7,7 +7,6 @@
 					<div class="inner">
 						<h2>
 							<span class="title-3">{{ t('Browse by') }} <span style="font-weight: bold;">{{ t('Category') }}</span></span>
-
 						</h2>
 					</div>
 				</div>
@@ -16,7 +15,7 @@
 					
 					@if (isset($categories) and $categories->count() > 0)
 						@foreach($categories as $key => $cat)
-							<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 f-category">
+							<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 f-category border-0">
 								<a href="{{ \App\Helpers\UrlGen::category($cat) }}">
 									<img src="{{ imgUrl($cat->picture, 'cat') }}" class="lazyload img-fluid" alt="{{ $cat->name }}">
 									<h6>

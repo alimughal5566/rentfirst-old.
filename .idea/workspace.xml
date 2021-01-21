@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:muazzam" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="1 level nav">
+    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/featured.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/featured.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/dimensions.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/dimensions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/rotations.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/rotations.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/latest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/latest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +53,20 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="stage" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -177,19 +229,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/custom" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Installation\xampp\htdocs\rentfirst\public\assets\custom" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\js" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\rentfirst\public\storage\app\logo" />
+      <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass" />
+      <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass\styles" />
     </key>
   </component>
   <component name="RunManager" selected="npm.production">
@@ -198,6 +253,16 @@
       <command value="run" />
       <scripts>
         <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prod" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -235,14 +300,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.production" />
         <item itemvalue="npm.watch-poll" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.prod" />
+        <item itemvalue="npm.production" />
         <item itemvalue="npm.watch" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -257,43 +323,115 @@
       <workItem from="1610484331185" duration="1726000" />
       <workItem from="1611053358045" duration="10181000" />
       <workItem from="1611075940720" duration="1147000" />
-      <workItem from="1611210482489" duration="1880000" />
+      <workItem from="1611122452631" duration="16484000" />
+      <workItem from="1611157919675" duration="1336000" />
+      <workItem from="1611170813538" duration="1382000" />
+      <workItem from="1611205397487" duration="5865000" />
+      <workItem from="1611214323260" duration="7213000" />
     </task>
-    <task id="LOCAL-00001" summary="1 level nav">
-      <created>1611224010557</created>
+    <task id="LOCAL-00001" summary="Style file updates">
+      <created>1611122527883</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1611224010557</updated>
+      <updated>1611122527883</updated>
     </task>
-    <task id="LOCAL-00002" summary="1 level nav">
-      <created>1611227689113</created>
+    <task id="LOCAL-00002" summary="Style file updates">
+      <created>1611206407274</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1611227689113</updated>
+      <updated>1611206407274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Style file updates">
+      <created>1611214381525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611214381525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Style file updates">
+      <created>1611214398952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611214398952</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Style file updates">
+      <created>1611226380821</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611226380821</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="muazzam" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="1 level nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 level nav" />
+    <MESSAGE value="Style file updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style file updates" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="412" y="0" key="CommitChangelistDialog2" timestamp="1611226377240">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="412" y="0" key="CommitChangelistDialog2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611226377240" />
+    <state width="1559" height="311" key="GridCell.Tab.0.bottom" timestamp="1611229059123">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1559" height="311" key="GridCell.Tab.0.bottom/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611229059123" />
+    <state width="1559" height="311" key="GridCell.Tab.0.center" timestamp="1611229059122">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1559" height="311" key="GridCell.Tab.0.center/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611229059122" />
+    <state width="1559" height="311" key="GridCell.Tab.0.left" timestamp="1611229059122">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1559" height="311" key="GridCell.Tab.0.left/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611229059122" />
+    <state width="1559" height="311" key="GridCell.Tab.0.right" timestamp="1611229059122">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state width="1559" height="311" key="GridCell.Tab.0.right/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611229059122" />
+    <state x="691" y="298" width="609" height="264" key="MultipleFileMergeDialog" timestamp="1611228185430">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="691" y="298" width="609" height="264" key="MultipleFileMergeDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611228185430" />
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611226405737">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611226405737" />
+    <state x="514" y="165" width="574" height="530" key="find.popup" timestamp="1611219647526">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="514" y="165" width="574" height="530" key="find.popup/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611219647526" />
   </component>
 </project>

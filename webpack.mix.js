@@ -19,11 +19,14 @@ const mix = require('laravel-mix');
 // .sass('resources/fonts/fawesome/scss/all.scss', 'public/assets/custom/css/fontawesome.css')
 // .sass('resources/sass/styles/helpers/animate.scss', 'public/assets/custom/css/animate.css')
 
-mix.sass('resources/sass/styles/helpers/normalize.scss', 'public/assets/custom/css/normalize.css')
-    .sass('resources/sass/common.scss', 'public/assets/custom/css/common.css')
-    .sass('resources/sass/defaults.scss', 'public/assets/custom/css/defaults.css')
-    .sass('resources/sass/main.scss', 'public/assets/custom/css/main.css')
-    .sass('resources/sass/medias.scss', 'public/assets/custom/css/responsive.css');
+
+mix.sass('resources/sass/styles/helpers/normalize.scss', 'public/assets/css/custom/normalize.css')
+    .sass('resources/sass/dimensions.scss', 'public/assets/css/custom/dimensions.css')
+    .sass('resources/sass/rotations.scss', 'public/assets/css/custom/rotations.css')
+    .sass('resources/sass/common.scss', 'public/assets/css/custom/common.css')
+    .sass('resources/sass/defaults.scss', 'public/assets/css/custom/defaults.css')
+    .sass('resources/sass/main.scss', 'public/assets/css/custom/main.css')
+    .sass('resources/sass/medias.scss', 'public/assets/css/custom/responsive.css');
 
 mix.options({processCssUrls: false});
 

@@ -23,13 +23,13 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
     <link rel="shortcut icon" href="{{ imgUrl(config('settings.app.favicon'), 'favicon') }}">
 
     <!-- Common -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/normalize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/normalize.css')}}">
 
     <!-- Fonts -->
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/fontawesome.css')}}">--}}
+    {{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/fontawesome.css')}}">--}}
 
 
-        <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/fontawesome/css/all.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/fontawesome/css/all.css')}}">
 
     <title>{!! MetaTag::get('title') !!}</title>
     {!! MetaTag::tag('description') !!}{!! MetaTag::tag('keywords') !!}
@@ -108,10 +108,12 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
     @endif
 
 <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/common.css')}}?{{ time() }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/defaults.css')}}?{{ time() }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/main.css')}}?{{ time() }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/custom/css/responsive.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/common.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/dimensions.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/rotations.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/defaults.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/main.css')}}?{{ time() }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/responsive.css')}}?{{ time() }}">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -314,5 +316,8 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
 @if (config('settings.footer.tracking_code'))
     {!! printJs(config('settings.footer.tracking_code')) . "\n" !!}
 @endif
+
+<script src="{{asset('assets/js/custom/custom.js')}}"></script>
+
 </body>
 </html>

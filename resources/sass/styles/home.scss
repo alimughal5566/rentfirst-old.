@@ -1,7 +1,60 @@
+/*      MIXINS      */
+@import "partials/mixin";
+/*      /MIXINS      */
+
 /* HOME */
 
 /*      Banner section      */
+#homepage {
+
+  .wide-intro {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wide-intro {
+
+    .search-row {
+      background-color: transparent;
+    }
+
+  }
+
+}
 
 /*      /Banner section      */
+
+.row-featured-category {
+
+  .category-list {
+    @include d-flex;
+    @include flex-wrap;
+    @include justify-content-around;
+
+    .item-list {
+      width: 24.5%;
+      border: none;
+
+      .photobox {
+
+        .add-image {
+
+          a {
+
+            img {
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
 
 /* /HOME */

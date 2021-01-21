@@ -26,7 +26,7 @@ $logoLabel = '';
 if (getSegment(1) != trans('routes.countries')) {
     $logoLabel = config('settings.app.app_name') . ((!empty(config('country.name'))) ? ' ' . config('country.name') : '');
 }
-$main=\App\Models\Category::where('parent_id',0)->get();
+$main = \App\Models\Category::where('parent_id', 0)->get();
 ?>
 <div class="header">
     <nav class="header-main navbar fixed-top navbar-site navbar-light bg-light navbar-expand-md" role="navigation">
@@ -67,7 +67,7 @@ $main=\App\Models\Category::where('parent_id',0)->get();
                     @endif
                 @endif
             </div>
-{{--@dd($main->name);--}}
+            {{--@dd($main->name);--}}
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
@@ -193,19 +193,39 @@ $main=\App\Models\Category::where('parent_id',0)->get();
 
         </div>
     </nav>
-    <div class="header-navigation">
-
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categories
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                @foreach($main as $main_category)
-                        <a class="dropdown-item" >{{$main_category->name}}</a>
-                @endforeach
+    <div class="header-navigation ">
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle font-weight-bold text-white text-uppercase" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Categories
+                </button>
+                <div class="dropdown-menu wp-100 p-0" aria-labelledby="dropdownMenuButton">
+                    <div class="d-flex flex-wrap vertical-menu p-3">
+                        @foreach($main as $main_key => $main_category)
+                            @if($main_key<10)
+                                <div class="wp-100 wp-md-20 main-item">
+                                    <a class="dropdown-item">
+                                        <i class="fas fa-home mr-1"></i>
+                                        <span class="font-weight-bold">
+                                            {{$main_category->name}}
+                                        </span>
+                                    </a>
+                                    <div class="sub-menu">
+                                        @foreach($main as $sub_key => $main_category)
+                                            @if($sub_key<5)
+                                                <span class="submenu-item">
+                                                    <a class="dropdown-item">{{$main_category->name}}</a>
+                                                </span>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 </div>

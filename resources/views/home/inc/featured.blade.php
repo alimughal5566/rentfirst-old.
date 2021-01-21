@@ -12,9 +12,6 @@ if (!isset($cacheExpiration)) {
 					<div class="inner">
 						<h2>
 							<span class="title-3">{!! $featured->title !!}</span>
-							<a href="{{ $featured->link }}" class="sell-your-item">
-								{{ t('View more') }} <i class="icon-th-list"></i>
-							</a>
 						</h2>
 					</div>
 				</div>
