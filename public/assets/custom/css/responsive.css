@@ -1,1 +1,40 @@
-@media (max-width:1199.98px){.section-padding{padding-top:75px;padding-bottom:75px}}@media (max-width:991.98px){.section-padding{padding-top:50px;padding-bottom:50px}}
+/* DESKTOP FIRST MEDIA QUERIES */
+/* Extra Large devices (desktops, less than 1400px)*/
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+  .section-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+/* Custom Media Query (desktops, less than 1024px)*/
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+/* Small devices (landscape phones, less than 768px)*/
+/* Extra small devices (portrait phones, less than 576px)*/
+/* Customized Media Queries (phones, less than 400px) */
+/* Extra small devices (portrait phones, less than 400px)*/
+/* Customized Media Queries (phones, less than 400px) */
+/* /DESKTOP FIRST MEDIA QUERIES */
+/**/
+/* MOBILE FIRST MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up)*/
+/* Medium devices (tablets, 768px and up)*/
+/* Large devices (desktops, 992px and up)*/
+/* Customized Media Queries (Min Width) */
+/* Customized Media Queries (Min Width) */
+/* Extra large devices (large desktops, 1200px and up)*/
+/* Extra extra large devices (1400px and up)*/
+/* Extra extra extra large devices (4K and up)*/
+/* /MOBILE FIRST MEDIA QUERIES */
+/**/
+/* MIXED SCREEN MEDIA QUERIES */
+/* /MIXED SCREEN MEDIA QUERIES */
+/**/
+/* COMBINED MEDIA QUERIES */
+/* /COMBINED MEDIA QUERIES */
