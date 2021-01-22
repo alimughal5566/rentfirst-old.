@@ -26,7 +26,7 @@ $logoLabel = '';
 if (getSegment(1) != trans('routes.countries')) {
     $logoLabel = config('settings.app.app_name') . ((!empty(config('country.name'))) ? ' ' . config('country.name') : '');
 }
-$main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->where('active',1)->get()->take(8);
+$main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->where('active', 1)->get()->take(8);
 
 ?>
 <div class="header">
@@ -165,26 +165,26 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                         @include('currencyexchange::select-currency')
                     @endif
 
-                    <li class="nav-item postadd">
-                        @if (!auth()->check())
-                            @if (config('settings.single.guests_can_post_ads') != '1')
-                                <a class="btn btn-block btn-border btn-post btn-add-listing" href="#quickLogin"
-                                   data-toggle="modal">
-                                    <i class="fa fa-plus-circle"></i> {{ t('Add Listing') }}
-                                </a>
-                            @else
-                                <a class="btn btn-block btn-border btn-post btn-add-listing"
-                                   href="{{ \App\Helpers\UrlGen::addPost() }}">
-                                    <i class="fa fa-plus-circle"></i> {{ t('Add Listing') }}
-                                </a>
-                            @endif
-                        @else
-                            <a class="btn btn-block btn-border btn-post btn-add-listing"
-                               href="{{ \App\Helpers\UrlGen::addPost() }}">
-                                <i class="fa fa-plus-circle"></i> {{ t('Add Listing') }}
-                            </a>
-                        @endif
-                    </li>
+                    {{--                    <li class="nav-item postadd">--}}
+                    {{--                        @if (!auth()->check())--}}
+                    {{--                            @if (config('settings.single.guests_can_post_ads') != '1')--}}
+                    {{--                                <a class="btn btn-block btn-border btn-post btn-add-listing" href="#quickLogin"--}}
+                    {{--                                   data-toggle="modal">--}}
+                    {{--                                    <i class="fa fa-plus-circle"></i> {{ t('Add Listing') }}--}}
+                    {{--                                </a>--}}
+                    {{--                            @else--}}
+                    {{--                                <a class="btn btn-block btn-border btn-post btn-add-listing"--}}
+                    {{--                                   href="{{ \App\Helpers\UrlGen::addPost() }}">--}}
+                    {{--                                    <i class="fa fa-plus-circle"></i> {{ t('Add Listing') }}--}}
+                    {{--                                </a>--}}
+                    {{--                            @endif--}}
+                    {{--                        @else--}}
+                    {{--                            <a class="btn btn-block btn-border btn-post btn-add-listing"--}}
+                    {{--                               href="{{ \App\Helpers\UrlGen::addPost() }}">--}}
+                    {{--                                <i class="fa fa-plus-circle"></i> {{ t('Add Listing') }}--}}
+                    {{--                            </a>--}}
+                    {{--                        @endif--}}
+                    {{--                    </li>--}}
 
                     @include('layouts.inc.menu.select-language')
 
@@ -196,16 +196,20 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
     </nav>
     <div class="header-navigation ">
         <div class="container">
-            <div class="dropdown">
-                <button class="btn dropdown-toggle font-weight-bold text-white text-uppercase" type="button"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    All Categories
-                </button>
-                <div class="dropdown-menu wp-100 p-0" aria-labelledby="dropdownMenuButton">
-                    <div class="d-flex flex-wrap vertical-menu p-4">
-                        @foreach($main as $main_key => $main_category)
-                                <div class="wp-100 wp-md-20 main-item">
-                                        <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
+            <div class="header-nav-wrap d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap position-relative py-2">
+
+                <div class="dropdown position-md-unset">
+                    <button class="btn dropdown-toggle font-weight-bold text-white text-uppercase" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        All Categories
+                    </button>
+                    <div class="dropdown-menu wp-100 p-0" aria-labelledby="dropdownMenuButton">
+                        <div class="d-flex flex-wrap vertical-menu px-3 py-1">
+                            @foreach($main as $main_key => $main_category)
+                                <div class="wp-100 wp-md-20 main-item py-2">
+                                    <a class="dropdown-item"
+                                       href="{{ \App\Helpers\UrlGen::category($main_category) }}">
                                         <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
                                         <span class="font-weight-bold">
 
@@ -215,28 +219,61 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
 
                                     <div class="sub-menu">
                                         @if(isset($main_category->Subcategories))
-                                        @foreach($main_category->Subcategories->take(5) as $sub_main_category)
+                                            @foreach($main_category->Subcategories->take(5) as $sub_main_category)
                                                 <span class="submenu-item">
-                                                        <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($sub_main_category, 1) }}">{{$sub_main_category->name}}</a>
+                                                        <a class="dropdown-item"
+                                                           href="{{ \App\Helpers\UrlGen::category($sub_main_category, 1) }}">{{$sub_main_category->name}}</a>
                                                 </span>
-                                        @endforeach
+                                            @endforeach
                                         @endif
                                     </div>
                                 </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
+
+                <div class="navigation-special">
+                    @foreach($main->take(4) as $main_category)
+                        <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
+                            <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
+                            <span class="font-weight-normal">{{$main_category->name}}</span>
+                        </a>
+                    @endforeach
+                </div>
+
+                <div class="category-add">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item postadd">
+                            @if (!auth()->check())
+                                @if (config('settings.single.guests_can_post_ads') != '1')
+                                    <a class="btn btn-block btn-border btn-post btn-add-listing" href="#quickLogin"
+                                       data-toggle="modal">
+                                        {{--                                        <i class="fa fa-plus-circle"></i> --}}
+                                        <img src="{{asset('assets/images/site/cat.png')}}" alt="cat">
+                                        <span>{{ 'RENT' }}</span>
+                                    </a>
+                                @else
+                                    <a class="btn btn-block btn-border btn-post btn-add-listing"
+                                       href="{{ \App\Helpers\UrlGen::addPost() }}">
+                                        {{--                                        <i class="fa fa-plus-circle"></i> --}}
+                                        <img src="{{asset('assets/images/site/cat.png')}}" alt="cat">
+                                        <span>{{ 'RENT' }}</span>
+                                    </a>
+                                @endif
+                            @else
+                                <a class="btn btn-block btn-border btn-post btn-add-listing px-3 py-2"
+                                   href="{{ \App\Helpers\UrlGen::addPost() }}">
+                                    {{--                                    <i class="fa fa-plus-circle"></i> --}}
+                                    <img src="{{asset('images/site/cat.png')}}" alt="cat" class="img-fluid">
+                                    <span>{{ 'RENT' }}</span>
+                                </a>
+                            @endif
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-            @foreach($main->take(4) as $main_category)
-            <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
-                <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
-                <span class="font-weight-bold">
-
-                                            {{$main_category->name}}
-                                        </span>
-            </a>
-
-            @endforeach
     </div>
 </div>
