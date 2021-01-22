@@ -124,7 +124,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                             </div>
 
                             <div class="{{ $colDescBox }} add-desc-box">
-                                <div class="items-details">
+                                <div class="items-details px-2">
 
                                     <div class="{{ $colPriceBox }} text-center price-box">
                                         <h4 class="item-price font-weight-normal">

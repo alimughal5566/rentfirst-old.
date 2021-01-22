@@ -65,9 +65,10 @@
 
     .item-list {
       width: 24.5%;
-      border: 1px solid #ced4da;
-      border-radius: 1.5rem;
       overflow: hidden;
+      border-radius: 1.5rem;
+      height: auto !important;
+      border: 1px solid #ced4da;
       box-shadow: 0 0.35rem 0.15rem rgba(0, 0, 0, 0.2);
 
       &:hover, &:focus, &:active {
