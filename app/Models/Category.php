@@ -28,8 +28,11 @@ use Prologue\Alerts\Facades\Alert;
 
 class Category extends BaseModel
 {
+
 	use Crud, Sluggable, SluggableScopeHelpers, TranslatedTrait;
-	
+
+	protected $with='Subcategories';
+
 	/**
 	 * The table associated with the model.
 	 *
@@ -444,4 +447,9 @@ class Category extends BaseModel
 			$this->attributes['active'] = $value;
 		}
 	}
+
+
+	public function Subcategories(){
+        return $this->hasMany(self::class,'parent_id','id') ;
+    }
 }
