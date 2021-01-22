@@ -5,6 +5,10 @@ $(window).scroll(function (e) {
 $(document).ready(function () {
     // $('html').removeClass(' eventlistener localstorage no-touchevents no-forcetouch ');
 
+    $('.featured-list-slider .owl-nav button').empty();
+    $('.featured-list-slider .owl-nav button.owl-prev').html('<i class="fal fa-chevron-left"><i>');
+    $('.featured-list-slider .owl-nav button.owl-next').html('<i class="fal fa-chevron-right"><i>');
+
     // $('.featured-list-slider').owlCarousel({
     //     items: 4,
     //     loop: true,

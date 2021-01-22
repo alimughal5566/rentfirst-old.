@@ -81,8 +81,8 @@
 .header .header-navigation .category-add .navbar-nav .postadd .btn-add-listing {
   box-shadow: unset;
   text-shadow: unset;
-  border: transparent;
   background: transparent;
+  border-radius: 1.5rem !important;
   border: 1px solid transparent !important;
   font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;
 }
@@ -144,7 +144,6 @@
 
 .featured-list-slider .owl-stage {
   padding: 0.75rem 0;
-  width: 100% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,17 +198,19 @@
 .featured-list-slider .owl-nav.disabled {
   display: block;
 }
-
+.featured-list-slider .owl-nav button[class*=owl-] {
+  padding: 0.5rem 0.75rem !important;
+}
 .adds-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .adds-wrapper .item-list {
   overflow: hidden;
-  margin: 0 0.75rem 1rem;
+  margin: 0 0.5rem 1rem;
   border-radius: 1.5rem;
-  width: 18% !important;
+  width: 17.75% !important;
   height: auto !important;
   border: 1px solid #ced4da !important;
   box-shadow: 0 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -220,6 +221,10 @@
 .adds-wrapper .item-list:hover .photobox .add-image a.make-favorite, .adds-wrapper .item-list:focus .photobox .add-image a.make-favorite, .adds-wrapper .item-list:active .photobox .add-image a.make-favorite {
   width: auto;
   border-radius: 0.25rem;
+}
+.adds-wrapper .item-list .cornerRibbons {
+  left: -32.5%;
+  top: 7.5%;
 }
 .adds-wrapper .item-list .photobox {
   box-shadow: 0 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
