@@ -66,10 +66,8 @@
 															@endif
 														</a>
 														<span class="btn-cat-collapsed collapsed"
-															  data-toggle="collapse"
-															  data-target=".cat-id-{{ $iCat->id . $randomId }}"
-															  aria-expanded="false"
-														>
+															  data-toggle="collapse" aria-expanded="false"
+															  data-target=".cat-id-{{ $iCat->id . $randomId }}">
 															<span class="icon-down-open-big"></span>
 														</span>
 													</h3>
@@ -141,7 +139,7 @@
 
 				<div class="load-more">
 					<a href="{{ \App\Helpers\UrlGen::sitemap() }}" class="sell-your-item">
-						{{ t('View more') }} <i class="icon-th-list"></i>
+						{{ 'Load more' }} <i class="icon-th-list"></i>
 					</a>
 				</div>
 			</div>

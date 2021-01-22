@@ -22,7 +22,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                             <span class="title-3">{!! t('Home - Latest Ads') !!}</span>
                             <?php $attr = ['countryCode' => config('country.icode')]; ?>
                             <a href="{{ lurl(trans('routes.v-search', $attr), $attr) }}" class="sell-your-item">
-                                {{ t('View more') }} <i class="icon-th-list"></i>
+                                {{ 'Load more' }} <i class="icon-th-list"></i>
                             </a>
                         </h2>
                     </div>
@@ -124,7 +124,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                             </div>
 
                             <div class="{{ $colDescBox }} add-desc-box">
-                                <div class="items-details">
+                                <div class="items-details px-2">
 
                                     <div class="{{ $colPriceBox }} text-center price-box">
                                         <h4 class="item-price font-weight-normal">
@@ -189,7 +189,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                             <a href="{{ lurl(trans('routes.v-search', $attr), $attr) }}"
                                class="btn btn-default mt10 py-2  px-5 font-weight-bold">
                                 {{--                                <i class="fa fa-arrow-circle-right"></i>--}}
-                                {{ t('View more') }}
+                                {{ 'Load more' }}
                             </a>
                         </div>
                     @endif
