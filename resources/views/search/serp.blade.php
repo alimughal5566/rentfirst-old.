@@ -25,7 +25,7 @@
 
 @section('content')
 	<div class="main-container">
-		
+
 		@include('search.inc.breadcrumbs')
 		@include('search.inc.categories')
 		<?php if (\App\Models\Advertising::where('slug', 'top')->count() > 0): ?>
@@ -39,7 +39,7 @@
 		endif;
 		?>
 		@include('common.spacer')
-		
+
 		<div class="container">
 			<div class="row">
 
@@ -99,7 +99,7 @@
                                     @endforeach
                                 @endif
 							</ul>
-							
+
 							<div class="tab-filter">
 								<select id="orderBy" title="sort by" class="niceselecter select-sort-by" data-style="btn-select" data-width="auto">
 									<option value="{!! qsurl($fullUrlNoParams, request()->except(['orderBy', 'distance']), null, false) !!}">{{ t('Sort by') }}</option>
@@ -145,7 +145,7 @@
 								</div>
                                 <div style="clear:both;"></div>
 							</div>
-                            
+
 							@if ($paginator->getCollection()->count() > 0)
 								<div class="pull-right col-xs-6 text-right listing-view-action">
 									<span class="list-view"><i class="icon-th"></i></span>
@@ -156,7 +156,7 @@
 
 							<div style="clear:both"></div>
 						</div>
-						
+
 						<!-- Mobile Filter Bar -->
 						<div class="mobile-filter-bar col-xl-12">
 							<ul class="list-unstyled list-inline no-margin no-padding">
@@ -236,7 +236,7 @@
 							@endif
 						</div>
 					</div>
-					
+
 					<nav class="pagination-bar mb-5 pagination-sm" aria-label="">
 						{!! $paginator->appends(request()->query())->render() !!}
 					</nav>
@@ -252,7 +252,7 @@
 					</div>
 
 				</div>
-				
+
 				<div style="clear:both;"></div>
 
 				<!-- Advertising -->
@@ -280,7 +280,7 @@
 				redirect(goToUrl);
 			});
 		});
-		
+
 		@if (config('settings.optimization.lazy_loading_activation') == 1)
 		$(document).ready(function () {
 			$('#postsList').each(function () {

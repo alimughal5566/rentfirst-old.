@@ -262,7 +262,7 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                                     </a>
                                 @endif
                             @else
-                                <a class="btn btn-block btn-border btn-post btn-add-listing px-3 py-2"
+                                <a class="btn btn-block btn-border btn-post btn-add-listing px-4 py-2"
                                    href="{{ \App\Helpers\UrlGen::addPost() }}">
                                     {{--                                    <i class="fa fa-plus-circle"></i> --}}
                                     <img src="{{asset('images/site/cat.png')}}" alt="cat" class="img-fluid">

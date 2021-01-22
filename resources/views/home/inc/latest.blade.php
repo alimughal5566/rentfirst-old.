@@ -99,23 +99,27 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                         <div class="row">
                             <div class="col-sm-2 no-padding photobox">
                                 <div class="add-image">
-                                    {{--									<span class="photo-count"><i class="fa fa-camera"></i> {{ $pictures->count() }} </span>--}}
-                                    @if (isset($package) and !empty($package))
-                                        @if ($package->has_badge == 1)
-                                            <a class="btn btn-danger btn-sm make-favorite"><i
-                                                        class="fa fa-certificate"></i><span> {{ $package->short_name }} </span></a>
-                                            &nbsp;
+                                    <div class="fixed-fav d-flex align-items-center">
+
+                                        {{--									<span class="photo-count"><i class="fa fa-camera"></i> {{ $pictures->count() }} </span>--}}
+                                        @if (isset($package) and !empty($package))
+                                            @if ($package->has_badge == 1)
+                                                <a class="btn btn-danger btn-sm make-favorite"><i
+                                                            class="fa fa-certificate"></i><span> {{ $package->short_name }} </span></a>
+                                                &nbsp;
+                                            @endif
                                         @endif
-                                    @endif
-                                    @if (auth()->check())
-                                        <a class="btn btn-{{ (\App\Models\SavedPost::where('user_id', auth()->user()->id)->where('post_id', $post->id)->count() > 0) ? 'success' : 'default' }} btn-sm make-favorite"
-                                           id="{{ $post->id }}">
-                                            <i class="fa fa-heart"></i><span> {{ t('Save') }} </span>
-                                        </a>
-                                    @else
-                                        <a class="btn btn-default btn-sm make-favorite" id="{{ $post->id }}"><i
-                                                    class="fa fa-heart"></i><span> {{ t('Save') }} </span></a>
-                                    @endif
+                                        @if (auth()->check())
+                                            <a class="btn btn-{{ (\App\Models\SavedPost::where('user_id', auth()->user()->id)->where('post_id', $post->id)->count() > 0) ? 'success' : 'default' }} btn-sm make-favorite"
+                                               id="{{ $post->id }}">
+                                                <i class="fa fa-heart"></i><span> {{ t('Save') }} </span>
+                                            </a>
+                                        @else
+                                            <a class="btn btn-default btn-sm make-favorite" id="{{ $post->id }}"><i
+                                                        class="fa fa-heart"></i><span> {{ t('Save') }} </span></a>
+                                        @endif
+                                    </div>
+
                                     <a href="{{ \App\Helpers\UrlGen::post($post) }}" class="img-wrap">
                                         <img class="lazyload img-fluid p-0 border-0 no-margin" src="{{ $postImg }}"
                                              alt="{{ $post->title }}">
@@ -184,10 +188,10 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                     <div style="clear: both"></div>
 
                     @if (isset($latestOptions) and isset($latestOptions['show_view_more_btn']) and $latestOptions['show_view_more_btn'] == '1')
-                        <div class="mb20 mt-3 text-center w-100 load-more">
+                        <div class="mb20 mt-4 text-center w-100 load-more">
                             <?php $attr = ['countryCode' => config('country.icode')]; ?>
                             <a href="{{ lurl(trans('routes.v-search', $attr), $attr) }}"
-                               class="btn btn-default mt10 py-2  px-5 font-weight-bold">
+                               class="btn btn-default py-2 px-5 font-weight-bold">
                                 {{--                                <i class="fa fa-arrow-circle-right"></i>--}}
                                 {{ 'Load more' }}
                             </a>

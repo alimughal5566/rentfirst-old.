@@ -27,6 +27,10 @@
             @endforeach
         @endif
 
+        <div class="above-footer-banner mx-auto w-100 border border-top">
+            <img class="img-fluid" src="{{asset('images/bg.jpg')}}" alt="">
+        </div>
+
     </div>
 @endsection
 

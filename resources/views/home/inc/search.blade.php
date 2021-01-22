@@ -107,7 +107,7 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                             <form id="search" name="search" action="{{ lurl(trans('routes.v-search', $attr), $attr) }}"
                                   method="GET">
                                 {{--                                <div class="row m-0">--}}
-                                <div class="row m-0 d-flex justify-content-between">
+                                <div class="row m-0 d-flex justify-content-around">
 
                                     {{--									<div class="col-sm-5 col-xs-12 search-col relative locationicon">--}}
                                     <div class=" search-col  locationicon  search-location">
@@ -164,15 +164,11 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                             <?php $attr = ['countryCode' => config('country.icode')]; ?>
                             <form id="search" name="search" action="{{ lurl(trans('routes.v-search', $attr), $attr) }}"
                                   method="GET">
-                                <div class="row m-0">
-                                    <div class="col-sm-5 col-xs-12 search-col relative">
-                                        <i class="icon-docs icon-append"></i>
-                                        <input type="text" name="q" class="form-control keyword has-icon"
-                                               placeholder="{{ t('What?') }}" value="">
-                                    </div>
+                                <div class="row m-0 d-flex justify-content-around">
 
-                                    <div class="col-sm-5 col-xs-12 search-col relative locationicon">
-                                        <i class="icon-location-2 icon-append"></i>
+                                    {{--                                    <div class="col-sm-5 col-xs-12 search-col relative locationicon">--}}
+                                    <div class=" search-col  locationicon  search-location">
+                                        <i class="far fa-map-marker-alt"></i>
                                         <input type="hidden" id="lSearch" name="l" value="">
                                         @if ($showMap)
                                             <input type="text" id="locSearch" name="location"
@@ -188,7 +184,15 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                                         @endif
                                     </div>
 
-                                    <div class="col-sm-2 col-xs-12 search-col">
+                                    {{--                                    <div class="col-sm-5 col-xs-12 search-col relative">--}}
+                                    <div class=" search-col  search-keyword">
+                                        <i class="far fa-search"></i>
+                                        <input type="text" name="q" class="form-control keyword has-icon"
+                                               placeholder="{{ t('What?') }}" value="">
+                                    </div>
+
+                                    {{--									<div class="col-sm-2 col-xs-12 search-col">--}}
+                                    <div class="search-col search-button">
                                         <button class="btn btn-primary btn-search btn-block">
                                             <i class="icon-search"></i> <strong>{{ t('Find') }}</strong>
                                         </button>
