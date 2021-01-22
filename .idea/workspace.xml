@@ -26,9 +26,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/Offlinepayment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/OfflinepaymentServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/app/Mail/PaymentNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/app/Mail/PaymentSent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/app/Notifications/PaymentSent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/documentation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/init.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/public/images/logo-offlinepayment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/public/images/payment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/lang/en/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/lang/en/messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/lang/en/sms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/lang/fr/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/lang/fr/messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/lang/fr/sms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/views/emails/payment/notification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/views/emails/payment/sent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Plugins/offlinepayment/resources/views/offlinepayment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/featured.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/featured.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,18 +233,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/custom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Plugins/offlinepayment" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\rentfirst\app\Plugins\offlinepayment" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\public\assets\custom" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\js" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass" />
-      <recent name="E:\Installation\xampp\htdocs\rentfirst" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass" />
