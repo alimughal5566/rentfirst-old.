@@ -1,10 +1,10 @@
 <?php
-if (!isset($cacheExpiration)) {
-    $cacheExpiration = (int)config('settings.optimization.cache_expiration');
-}
+//if (!isset($cacheExpiration)) {
+//    $cacheExpiration = (int)config('settings.optimization.cache_expiration');
+//}
 ?>
 @if (isset($featured) and !empty($featured) and !empty($featured->posts))
-{{--	@include('home.inc.spacer')--}}
+	@include('home.inc.spacer')
 	<div class="container">
 		<div class="col-xl-12 content-box layout-section">
 			<div class="row row-featured row-featured-category">
@@ -70,7 +70,7 @@ if (!isset($cacheExpiration)) {
 									</a>
 								</div>
 							<?php endforeach; ?>
-			
+
 						</div>
 					</div>
 		
