@@ -26,12 +26,8 @@ $logoLabel = '';
 if (getSegment(1) != trans('routes.countries')) {
     $logoLabel = config('settings.app.app_name') . ((!empty(config('country.name'))) ? ' ' . config('country.name') : '');
 }
-$main = \App\Models\Category::where('parent_id', 0)->where('active',1)->get()->take(8);
-//foreach($main as $data1){
-//    dd($data1);
-//}
-//dd($main);
-//$sub_main = \App\Models\Category::where('parent_id','!=' ,0)->get();
+$main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->where('active',1)->get()->take(8);
+
 ?>
 <div class="header">
     <nav class="header-main navbar fixed-top navbar-site navbar-light bg-light navbar-expand-md" role="navigation">
@@ -208,8 +204,6 @@ $main = \App\Models\Category::where('parent_id', 0)->where('active',1)->get()->t
                 <div class="dropdown-menu wp-100 p-0" aria-labelledby="dropdownMenuButton">
                     <div class="d-flex flex-wrap vertical-menu p-4">
                         @foreach($main as $main_key => $main_category)
-{{--                            @dd($main_category)--}}
-{{--                            @if($main_key<10)--}}
                                 <div class="wp-100 wp-md-20 main-item">
                                         <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
                                         <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
@@ -220,25 +214,29 @@ $main = \App\Models\Category::where('parent_id', 0)->where('active',1)->get()->t
                                     </a>
 
                                     <div class="sub-menu">
-
                                         @if(isset($main_category->Subcategories))
                                         @foreach($main_category->Subcategories->take(5) as $sub_main_category)
-{{--                                                @if($sub_main_category<5)--}}
                                                 <span class="submenu-item">
-{{--                                                    <a class="dropdown-item">--}}
                                                         <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($sub_main_category, 1) }}">{{$sub_main_category->name}}</a>
                                                 </span>
-{{--                                            @endif--}}
                                         @endforeach
                                         @endif
                                     </div>
-{{--                                    @endif--}}
                                 </div>
-{{--                            @endif--}}
                         @endforeach
                     </div>
                 </div>
             </div>
         </div>
+            @foreach($main->take(4) as $main_category)
+            <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
+                <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
+                <span class="font-weight-bold">
+
+                                            {{$main_category->name}}
+                                        </span>
+            </a>
+
+            @endforeach
     </div>
 </div>

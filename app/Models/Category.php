@@ -31,7 +31,7 @@ class Category extends BaseModel
 
 	use Crud, Sluggable, SluggableScopeHelpers, TranslatedTrait;
 
-	protected $with='Subcategories';
+//	protected $with='Subcategories';
 
 	/**
 	 * The table associated with the model.
