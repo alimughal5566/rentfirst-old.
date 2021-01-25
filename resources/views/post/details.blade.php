@@ -190,7 +190,7 @@
                                         <a class="nav-link"
                                            id="item-{{ config('plugins.reviews.name') }}-tab"
                                            data-toggle="tab"
-                                           href="#item-{{ config('plugins.reviews.name') }}"
+                                           href="#tab-{{ config('plugins.reviews.name') }}"
                                            role="tab"
                                            aria-controls="item-{{ config('plugins.reviews.name') }}"
                                            aria-selected="false"

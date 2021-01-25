@@ -170,7 +170,7 @@
       @include justify-content-between;
 
       .dropdown-item {
-        color: #fff;
+        color: #fff !important;
         width: auto;
         max-width: 24.5%;
         font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;

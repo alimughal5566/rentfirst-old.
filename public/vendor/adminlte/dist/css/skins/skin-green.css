@@ -35,7 +35,7 @@
 }
 
 .skin-green .main-header .navbar .sidebar-toggle:hover {
-    background-color: #008d4c;
+    background-color: #69D161;
 }
 
 @media (max-width: 767px) {
@@ -48,18 +48,18 @@
     }
 
     .skin-green .main-header .navbar .dropdown-menu li a:hover {
-        background: #008d4c;
+        background: #69D161;
     }
 }
 
 .skin-green .main-header .logo {
-    background-color: #008d4c;
+    background-color: #69D161;
     color: #ffffff;
     border-bottom: 0 solid transparent;
 }
 
 .skin-green .main-header .logo:hover {
-    background-color: #008749;
+    background-color: #69D161;
 }
 
 .skin-green .main-header li.user-header {

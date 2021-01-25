@@ -37,12 +37,12 @@ footer {
             li {
 
               a {
-                color: #fff;
+                color: #fff !important;
                 line-height: 1.75;
                 font-size: 0.9rem;
 
                 &:hover, &:focus, &:active {
-                  color: #636363;
+                  color: #636363 !important;
                 }
 
               }
