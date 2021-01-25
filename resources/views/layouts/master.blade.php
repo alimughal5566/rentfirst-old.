@@ -106,8 +106,13 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
     @if (config('settings.other.js_code'))
         {!! printJs(config('settings.other.js_code')) . "\n" !!}
     @endif
+    <link rel="stylesheet" type="text/css"
+          href="{{asset('assets/plugins/bootstrap-daterangepicker/daterangepicker.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/fontello.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/jquery-nice-select/css/nice-select.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/jquery.fs.selecter/jquery.fs.selecter.css')}}">
 
-<!-- Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/common.css')}}?{{ time() }}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/dimensions.css')}}?{{ time() }}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom/rotations.css')}}?{{ time() }}">

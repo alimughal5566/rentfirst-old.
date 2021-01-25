@@ -20,18 +20,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="Banner Updates">
+    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/dimensions.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/dimensions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-single.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/custom/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/rotations.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/rotations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/plugins/jquery.fs.selecter/jquery.fs.selecter.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery.fs.selecter/jquery.fs.selecter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/layouts/inc/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/layouts/inc/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/latest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/latest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/tools/svgmap.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/tools/svgmap.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/post/details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/search/inc/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/inc/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/search/inc/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/inc/posts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/search/serp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/serp.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,6 +330,9 @@
       <workItem from="1611242669543" duration="585000" />
       <workItem from="1611248181669" duration="330000" />
       <workItem from="1611295137207" duration="2992000" />
+      <workItem from="1611413818347" duration="1076000" />
+      <workItem from="1611426849010" duration="741000" />
+      <workItem from="1611551786596" duration="12340000" />
     </task>
     <task id="LOCAL-00001" summary="Style file updates">
       <created>1611122527883</created>
@@ -377,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611324510863</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Banner Updates">
+      <created>1611413943097</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611413943097</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,10 +429,11 @@
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="377" y="58" key="#JSHint/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611311346412" />
-    <state x="412" y="0" key="CommitChangelistDialog2" timestamp="1611327713451">
+    <state x="412" y="0" key="CommitChangelistDialog2" timestamp="1611413938139">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="412" y="0" key="CommitChangelistDialog2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327713451" />
+    <state x="412" y="0" key="CommitChangelistDialog2/0.0.1603.862@0.0.1603.862" timestamp="1611413938139" />
     <state x="581" y="185" key="FileChooserDialogImpl" timestamp="1611322918136">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
@@ -441,14 +462,15 @@
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="968" y="121" key="RollbackChangesDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327334618" />
-    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611324524142">
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611413949957">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="393" y="163" key="Vcs.Push.Dialog.v2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611324524142" />
-    <state x="514" y="165" width="574" height="582" key="find.popup" timestamp="1611318851501">
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862@0.0.1603.862" timestamp="1611413949957" />
+    <state x="514" y="165" width="574" height="582" key="find.popup" timestamp="1611563421298">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="514" y="165" width="574" height="582" key="find.popup/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611318851501" />
+    <state x="514" y="165" width="574" height="582" key="find.popup/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611563421298" />
     <state x="597" y="143" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611327341988">
       <screen x="0" y="0" width="1603" height="862" />
     </state>

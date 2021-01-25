@@ -32,11 +32,11 @@ if (config('app.skin') == 'skin-green') {
     $map = [
         'show' 				=> false,
         'backgroundColor' 	=> 'transparent',
-        'border' 			=> '#228B22',
-        'hoverBorder' 		=> '#228B22',
+        'border' 			=> '#69D161',
+        'hoverBorder' 		=> '#69D161',
         'borderWidth' 		=> 4,
         'color' 			=> '#cae7ca',
-        'hover' 			=> '#228B22',
+        'hover' 			=> '#69D161',
         'width' 			=> '300px',
         'height' 			=> '300px',
     ];

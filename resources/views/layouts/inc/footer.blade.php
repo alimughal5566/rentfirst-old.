@@ -190,61 +190,61 @@ if (
                                                 <ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
                                                     @if (config('settings.social_link.facebook_page_url'))
                                                         <li>
-                                                            <a class="icon-color fb" title="" data-placement="top"
+                                                            <a class="icon-color " title="Facebook" data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.facebook_page_url') }}"
                                                                data-original-title="Facebook">
-                                                                <i class="fab fa-facebook"></i>
+                                                                <i class="fab fa-facebook fa-2x"></i>
                                                             </a>
                                                         </li>
                                                     @endif
                                                     @if (config('settings.social_link.twitter_url'))
                                                         <li>
-                                                            <a class="icon-color tw" title="" data-placement="top"
+                                                            <a class="icon-color " title="Twitter" data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.twitter_url') }}"
                                                                data-original-title="Twitter">
-                                                                <i class="fab fa-twitter"></i>
+                                                                <i class="fab fa-twitter fa-2x"></i>
                                                             </a>
                                                         </li>
                                                     @endif
                                                     @if (config('settings.social_link.instagram_url'))
                                                         <li>
-                                                            <a class="icon-color pin" title="" data-placement="top"
+                                                            <a class="icon-color " title="Instagram" data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.instagram_url') }}"
                                                                data-original-title="Instagram">
-                                                                <i class="fab fa-instagram"></i>
+                                                                <i class="fab fa-instagram fa-2x"></i>
                                                             </a>
                                                         </li>
                                                     @endif
                                                     @if (config('settings.social_link.google_plus_url'))
                                                         <li>
-                                                            <a class="icon-color gp" title="" data-placement="top"
+                                                            <a class="icon-color " title="Google+" data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.google_plus_url') }}"
                                                                data-original-title="Google+">
-                                                                <i class="fab fa-google-plus"></i>
+                                                                <i class="fab fa-google-plus fa-2x"></i>
                                                             </a>
                                                         </li>
                                                     @endif
                                                     @if (config('settings.social_link.linkedin_url'))
                                                         <li>
-                                                            <a class="icon-color lin" title="" data-placement="top"
+                                                            <a class="icon-color " title="LinkedIn" data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.linkedin_url') }}"
                                                                data-original-title="LinkedIn">
-                                                                <i class="fab fa-linkedin"></i>
+                                                                <i class="fab fa-linkedin fa-2x"></i>
                                                             </a>
                                                         </li>
                                                     @endif
                                                     @if (config('settings.social_link.pinterest_url'))
                                                         <li>
-                                                            <a class="icon-color pin" title="" data-placement="top"
+                                                            <a class="icon-color " title="Pinterest" data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.pinterest_url') }}"
                                                                data-original-title="Pinterest">
-                                                                <i class="fab fa-pinterest-p"></i>
+                                                                <i class="fab fa-pinterest-p fa-2x"></i>
                                                             </a>
                                                         </li>
                                                     @endif

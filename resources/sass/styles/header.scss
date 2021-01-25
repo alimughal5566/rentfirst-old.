@@ -8,7 +8,7 @@
 }
 
 .header {
-  box-shadow: 0 15px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid #ced4da;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -18,13 +18,56 @@
   .navbar {
 
     &.header-main {
-      box-shadow: 0 15px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;
       position: relative !important;
 
       &.stuck {
         margin-top: 0;
+      }
+
+      ul {
+
+        &.navbar-nav {
+
+          li {
+
+            a {
+
+              &.user-image-wrap {
+                position: relative;
+                align-items: center;
+                display: flex;
+                padding: 0;
+
+                .user-image {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  position: relative;
+
+                  img {
+                    position: absolute;
+                    width: 100%;
+
+                  }
+                }
+
+                &::after {
+                  position: absolute;
+                  right: -0.6rem;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
       }
 
     }

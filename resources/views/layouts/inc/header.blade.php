@@ -99,7 +99,7 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                     @endif
                 </ul>
 
-                <ul class="nav navbar-nav ml-auto navbar-right">
+                <ul class="nav navbar-nav ml-auto navbar-right align-items-center">
                     @if (!auth()->check())
                         <li class="nav-item">
                             @if (config('settings.security.login_open_in_modal'))
@@ -126,37 +126,56 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                                 </a>
                             @endif
                         </li>
-                        <li class="nav-item dropdown no-arrow">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <i class="icon-user fa hidden-sm"></i>
-                                <span>{{ auth()->user()->name }}</span>
-                                <span class="badge badge-pill badge-important count-conversations-with-new-messages hidden-sm">0</span>
-                                <i class="icon-down-open-big fa hidden-sm"></i>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle nav-link user-image-wrap" data-toggle="dropdown">
+                                <span class="user-image d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="{{asset('images/user.jpg')}}" alt="">
+                                    <i class="icon-user fa hidden-sm"></i>
+                                    <span class="badge badge-pill badge-important count-conversations-with-new-messages hidden-sm">0</span>
+                                    <i class="icon-down-open-big fa hidden-sm"></i>
+                                </span>
                             </a>
                             <ul id="userMenuDropdown" class="dropdown-menu user-menu dropdown-menu-right shadow-sm">
                                 <li class="dropdown-item active">
                                     <a href="{{ lurl('account') }}">
-                                        <i class="icon-home"></i> {{ t('Personal Home') }}
+                                        <span>{{ auth()->user()->name }}</span>
                                     </a>
                                 </li>
-                                <li class="dropdown-item"><a href="{{ lurl('account/my-posts') }}"><i
-                                                class="icon-th-thumb"></i> {{ t('My ads') }} </a></li>
-                                <li class="dropdown-item"><a href="{{ lurl('account/favourite') }}"><i
-                                                class="icon-heart"></i> {{ t('Favourite ads') }} </a></li>
-                                <li class="dropdown-item"><a href="{{ lurl('account/saved-search') }}"><i
-                                                class="icon-star-circled"></i> {{ t('Saved searches') }} </a></li>
-                                <li class="dropdown-item"><a href="{{ lurl('account/pending-approval') }}"><i
-                                                class="icon-hourglass"></i> {{ t('Pending approval') }} </a></li>
-                                <li class="dropdown-item"><a href="{{ lurl('account/archived') }}"><i
-                                                class="icon-folder-close"></i> {{ t('Archived ads') }}</a></li>
+                                {{--                                <li class="dropdown-item ">--}}
+                                {{--                                    <a href="{{ lurl('account') }}">--}}
+                                {{--                                        <i class="icon-home"></i> {{ t('Personal Home') }}--}}
+                                {{--                                    </a>--}}
+                                {{--                                </li>--}}
+                                <li class="dropdown-item">
+                                    <a href="{{ lurl('account/my-posts') }}">
+                                        <i class="far fa-thumbs-up"></i> {{ t('My ads') }} </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="{{ lurl('account/favourite') }}">
+                                        <i class="fas fa-heart"></i> {{ t('Favourite ads') }} </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="{{ lurl('account/saved-search') }}">
+                                        <i class="fas fa-star"></i> {{ t('Saved searches') }} </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="{{ lurl('account/pending-approval') }}">
+                                        <i class="fas fa-hourglass-start"></i> {{ t('Pending approval') }} </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="{{ lurl('account/archived') }}">
+                                        <i class="fas fa-folder"></i> {{ t('Archived ads') }}</a>
+                                </li>
                                 <li class="dropdown-item">
                                     <a href="{{ lurl('account/conversations') }}">
-                                        <i class="icon-mail-1"></i> {{ t('Conversations') }}
+                                        <i class="fas fa-comment-dots"></i> {{ t('Conversations') }}
                                         <span class="badge badge-pill badge-important count-conversations-with-new-messages">0</span>
                                     </a>
                                 </li>
-                                <li class="dropdown-item"><a href="{{ lurl('account/transactions') }}"><i
-                                                class="icon-money"></i> {{ t('Transactions') }}</a></li>
+                                <li class="dropdown-item">
+                                    <a href="{{ lurl('account/transactions') }}">
+                                        <i class="fas fa-money-bill"></i> {{ t('Transactions') }}</a>
+                                </li>
                             </ul>
                         </li>
                     @endif

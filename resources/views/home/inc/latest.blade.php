@@ -127,25 +127,24 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                                 </div>
                             </div>
 
+                            <div class="{{ $colPriceBox }} text-center price-box">
+                                <h4 class="item-price font-weight-normal pt-3 pb-0">
+                                    @if (isset($liveCat->type))
+                                        @if (!in_array($liveCat->type, ['not-salable']))
+                                            @if ($post->price > 0)
+                                                {!! \App\Helpers\Number::money($post->price) !!}
+                                            @else
+                                                {!! \App\Helpers\Number::money('--') !!}
+                                            @endif
+                                        @endif
+                                    @else
+                                        {{ '--' }}
+                                    @endif
+                                </h4>
+                            </div>
+
                             <div class="{{ $colDescBox }} add-desc-box">
                                 <div class="items-details px-2">
-
-                                    <div class="{{ $colPriceBox }} text-center price-box">
-                                        <h4 class="item-price font-weight-normal">
-                                            @if (isset($liveCat->type))
-                                                @if (!in_array($liveCat->type, ['not-salable']))
-                                                    @if ($post->price > 0)
-                                                        {!! \App\Helpers\Number::money($post->price) !!}
-                                                    @else
-                                                        {!! \App\Helpers\Number::money('--') !!}
-                                                    @endif
-                                                @endif
-                                            @else
-                                                {{ '--' }}
-                                            @endif
-                                        </h4>
-                                    </div>
-
                                     <h5 class="add-title text-center">
                                         <a href="{{ \App\Helpers\UrlGen::post($post) }}">{{ \Illuminate\Support\Str::limit($post->title, 70) }} </a>
                                     </h5>

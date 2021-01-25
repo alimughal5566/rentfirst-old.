@@ -18,5 +18,18 @@ $(document).ready(function () {
     //     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
     // });
 
+    $('#itemsDetailsTabs li a').click(function () {
+        var tab = $(this).attr('href');
+
+        if ($(tab).hasClass('active')) { //this is the start of our condition
+            $('#itemsDetailsTabsContent li a').removeClass('active show');
+            $(tab).addClass('active');
+
+            // $('.container').hide();
+            $(tab).fadeIn('slow');
+        }
+
+    });
+
 });
 
