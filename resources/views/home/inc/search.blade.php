@@ -109,35 +109,39 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                                 {{--                                <div class="row m-0">--}}
                                 <div class="row m-0 d-flex justify-content-around">
 
-                                    {{--									<div class="col-sm-5 col-xs-12 search-col relative locationicon">--}}
-                                    <div class=" search-col  locationicon  search-location">
-                                        <i class="far fa-map-marker-alt"></i>
-                                        <input type="hidden" id="lSearch" name="l" value="">
-                                        @if ($showMap)
-                                            <input type="text" id="locSearch" name="location"
-                                                   class="form-control locinput input-rel searchtag-input has-icon tooltipHere"
-                                                   placeholder="{{ t('Where?') }}" value="" title=""
-                                                   data-placement="bottom" data-toggle="tooltip"
-                                                   data-original-title="{{ t('Enter a city name OR a state name with the prefix ":prefix" like: :prefix', ['prefix' => t('area:')]) . t('State Name') }}">
-                                        @else
-                                            <input type="text" id="locSearch" name="location"
-                                                   class="form-control locinput input-rel searchtag-input has-icon"
-                                                   placeholder="{{ t('Where?') }}" value="">
-                                        @endif
+                                    <div class="col-md-5 col-xs-12 search-col locationicon  search-location">
+                                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                                            <i class="far fa-map-marker-alt"></i>
+                                            <input type="hidden" id="lSearch" name="l" value="">
+                                            @if ($showMap)
+                                                <input type="text" id="locSearch" name="location"
+                                                       class="form-control locinput input-rel searchtag-input has-icon tooltipHere"
+                                                       placeholder="{{ t('Where?') }}" value="" title=""
+                                                       data-placement="bottom" data-toggle="tooltip"
+                                                       data-original-title="{{ t('Enter a city name OR a state name with the prefix ":prefix" like: :prefix', ['prefix' => t('area:')]) . t('State Name') }}">
+                                            @else
+                                                <input type="text" id="locSearch" name="location"
+                                                       class="form-control locinput input-rel searchtag-input has-icon"
+                                                       placeholder="{{ t('Where?') }}" value="">
+                                            @endif
+                                        </div>
                                     </div>
 
-                                    {{--									<div class="col-sm-5 col-xs-12 search-col relative">--}}
-                                    <div class=" search-col  search-keyword">
-                                        <i class="far fa-search"></i>
-                                        <input type="text" name="q" class="form-control keyword has-icon"
-                                               placeholder="{{ t('What?') }}" value="">
+                                    <div class="col-md-5 col-xs-12 search-col  search-keyword">
+                                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                                            <i class="far fa-search"></i>
+                                            <input type="text" name="q" class="form-control keyword has-icon"
+                                                   placeholder="{{ t('What?') }}" value="">
+                                        </div>
                                     </div>
 
-                                    {{--									<div class="col-sm-2 col-xs-12 search-col">--}}
-                                    <div class="search-col search-button">
-                                        <button class="btn btn-primary btn-search btn-block">
-                                            <i class="icon-search"></i> <strong>{{ t('Find') }}</strong>
-                                        </button>
+                                    <div class="col-md-2 col-xs-12 search-col search-button">
+                                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                                            <button class="btn btn-primary btn-search d-flex align-items-center">
+                                                {{--                                            <i class="icon-search"></i> --}}
+                                                <strong>{{ t('Find') }}</strong>
+                                            </button>
+                                        </div>
                                     </div>
 
                                     {!! csrf_field() !!}

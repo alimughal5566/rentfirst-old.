@@ -19,11 +19,11 @@ body {
 }
 
 a {
-  color: #69d161;
+  color: #69d161 !important;
 }
 
 a:hover, a:focus, a:active {
-  color: #df9833;
+  color: #df9833 !important;
 }
 
 .no-outline-shadow {
@@ -271,3 +271,15 @@ section button:hover, section button:focus, section button:active {
 }
 
 /*      /DEFAULTS      */
+.skin-green .btn-success, .skin-green .btn-warning, .skin-green .btn-danger, .skin-green .btn-info, .skin-green .btn-default, .skin-green .btn-border, .skin-green .btn-fb, .skin-green .btn-tw, .skin-green .btn-lkin {
+  color: #fff !important;
+}
+.skin-green .pricetag {
+  background: #69D161 !important;
+}
+.skin-green .thumb-item-link.active {
+  border-bottom: #69D161 !important;
+}
+.skin-green .search-row-wrapper {
+  background: transparent;
+}

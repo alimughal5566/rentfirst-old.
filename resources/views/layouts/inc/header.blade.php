@@ -215,7 +215,7 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
     </nav>
     <div class="header-navigation ">
         <div class="container">
-            <div class="header-nav-wrap d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap position-relative py-2">
+            <div class="header-nav-wrap d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap position-relative py-0">
 
                 <div class="dropdown position-md-unset">
                     <button class="btn dropdown-toggle font-weight-bold text-white text-uppercase" type="button"
@@ -269,14 +269,14 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                                     <a class="btn btn-block btn-border btn-post btn-add-listing" href="#quickLogin"
                                        data-toggle="modal">
                                         {{--                                        <i class="fa fa-plus-circle"></i> --}}
-                                        <img src="{{asset('assets/images/site/cat.png')}}" alt="cat">
+                                        <img src="{{asset('images/site/cat.png')}}" alt="cat">
                                         <span>{{ 'RENT' }}</span>
                                     </a>
                                 @else
                                     <a class="btn btn-block btn-border btn-post btn-add-listing"
                                        href="{{ \App\Helpers\UrlGen::addPost() }}">
                                         {{--                                        <i class="fa fa-plus-circle"></i> --}}
-                                        <img src="{{asset('assets/images/site/cat.png')}}" alt="cat">
+                                        <img src="{{asset('images/site/cat.png')}}" alt="cat">
                                         <span>{{ 'RENT' }}</span>
                                     </a>
                                 @endif
