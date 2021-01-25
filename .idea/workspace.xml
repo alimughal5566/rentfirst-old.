@@ -20,29 +20,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Plugins/reviews/resources/views/ratings-single.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/fontello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/plugins/jquery.fs.selecter/jquery.fs.selecter.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/plugins/jquery.fs.selecter/jquery.fs.selecter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/layouts/inc/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/layouts/inc/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/latest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/latest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/tools/svgmap.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/tools/svgmap.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/post/details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search/inc/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/inc/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search/inc/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/inc/posts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search/serp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/serp.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -438,22 +416,22 @@
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="581" y="185" key="FileChooserDialogImpl/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611322918136" />
-    <state width="1559" height="91" key="GridCell.Tab.0.bottom" timestamp="1611327879512">
+    <state width="1559" height="346" key="GridCell.Tab.0.bottom" timestamp="1611565543157">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="91" key="GridCell.Tab.0.bottom/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327879512" />
-    <state width="1559" height="91" key="GridCell.Tab.0.center" timestamp="1611327879511">
+    <state width="1559" height="346" key="GridCell.Tab.0.bottom/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611565543157" />
+    <state width="1559" height="346" key="GridCell.Tab.0.center" timestamp="1611565543157">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="91" key="GridCell.Tab.0.center/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327879511" />
-    <state width="1559" height="91" key="GridCell.Tab.0.left" timestamp="1611327879511">
+    <state width="1559" height="346" key="GridCell.Tab.0.center/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611565543157" />
+    <state width="1559" height="346" key="GridCell.Tab.0.left" timestamp="1611565543157">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="91" key="GridCell.Tab.0.left/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327879511" />
-    <state width="1559" height="91" key="GridCell.Tab.0.right" timestamp="1611327879512">
+    <state width="1559" height="346" key="GridCell.Tab.0.left/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611565543157" />
+    <state width="1559" height="346" key="GridCell.Tab.0.right" timestamp="1611565543157">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="91" key="GridCell.Tab.0.right/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327879512" />
+    <state width="1559" height="346" key="GridCell.Tab.0.right/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611565543157" />
     <state x="691" y="298" width="609" height="264" key="MultipleFileMergeDialog" timestamp="1611327352631">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
