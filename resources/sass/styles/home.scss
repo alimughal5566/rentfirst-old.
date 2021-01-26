@@ -179,11 +179,13 @@
           overflow: hidden;
           display: block;
           padding: 0 1px;
+          min-height: 150px;
           max-height: 150px;
         }
 
         .item-carousel-desc {
           min-height: 150px;
+          max-height: 200px;
           @include d-flex;
           @include flex-column;
           @include justify-content-center;
