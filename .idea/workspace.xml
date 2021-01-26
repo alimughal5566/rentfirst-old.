@@ -213,18 +213,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Plugins/offlinepayment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Plugins" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\rentfirst\app\Plugins" />
       <recent name="C:\xampp\htdocs\rentfirst\app\Plugins\offlinepayment" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\public\assets\custom" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources" />
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\js" />
-      <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Installation\xampp\htdocs\rentfirst\resources\sass" />
