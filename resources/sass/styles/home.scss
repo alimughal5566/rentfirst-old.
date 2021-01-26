@@ -143,17 +143,14 @@
 .featured-list-slider {
 
   .owl-stage-outer {
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 325px;
+    max-height: 325px;
   }
 
   .owl-stage {
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 325px;
+    max-height: 325px;
     padding: 0.5rem 0;
-    //@include d-flex;
-    //@include align-items-center;
-    //@include justify-content-center;
   }
 
   .owl-item {
@@ -179,6 +176,7 @@
           overflow: hidden;
           display: block;
           padding: 0 1px;
+          margin-bottom: 0;
           min-height: 150px;
           max-height: 150px;
         }
@@ -424,17 +422,19 @@
     a {
 
       &.btn {
-        background: linear-gradient(to right, #69E961, #69B661);
         color: #fff;
         font-size: 1.25rem;
         border-radius: 1.5rem;
         text-transform: uppercase;
+        border: 0.3rem solid transparent !important;
+        background: linear-gradient(to right, #69E961, #69B661);
         @include plain-all;
 
         &:hover, &:focus, &:active {
-          color: #69D161;
           background: #fff;
-          border-color: #69D161;
+          border-radius: 1.5rem;
+          color: #69D161 !important;
+          border: 0.3rem solid #69D161 !important;
           @include plain-all;
         }
 

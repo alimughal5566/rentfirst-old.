@@ -17,24 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/custom/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rent1st.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/defaults.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/defaults.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/inc/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/inc/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/inc/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/post/details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/search/inc/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/search/inc/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/partials/_mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/partials/_mixin.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
