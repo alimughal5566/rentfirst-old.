@@ -17,10 +17,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/defaults.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/custom/rotations.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/custom/rotations.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="stage" />
+        <entry key="$PROJECT_DIR$" value="muazzam" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,7 +212,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aptma" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../studio360" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -279,10 +284,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.watch-poll" />
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.prod" />
-        <item itemvalue="npm.production" />
         <item itemvalue="npm.watch" />
+        <item itemvalue="npm.production" />
+        <item itemvalue="npm.prod" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -312,6 +317,7 @@
       <workItem from="1611413818347" duration="1076000" />
       <workItem from="1611426849010" duration="741000" />
       <workItem from="1611551786596" duration="12340000" />
+      <workItem from="1611641594176" duration="2150000" />
     </task>
     <task id="LOCAL-00001" summary="Style file updates">
       <created>1611122527883</created>
@@ -433,50 +439,54 @@
     </state>
     <state x="412" y="0" key="CommitChangelistDialog2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611565763335" />
     <state x="412" y="0" key="CommitChangelistDialog2/0.0.1603.862@0.0.1603.862" timestamp="1611413938139" />
-    <state x="581" y="185" key="FileChooserDialogImpl" timestamp="1611322918136">
+    <state x="581" y="185" key="FileChooserDialogImpl" timestamp="1611642330277">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="581" y="185" key="FileChooserDialogImpl/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611322918136" />
-    <state width="1559" height="197" key="GridCell.Tab.0.bottom" timestamp="1611571559757">
+    <state x="581" y="185" key="FileChooserDialogImpl/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611642330277" />
+    <state width="1559" height="341" key="GridCell.Tab.0.bottom" timestamp="1611646418431">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="197" key="GridCell.Tab.0.bottom/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611571559757" />
-    <state width="1559" height="197" key="GridCell.Tab.0.center" timestamp="1611571559757">
+    <state width="1559" height="341" key="GridCell.Tab.0.bottom/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611646418431" />
+    <state width="1559" height="341" key="GridCell.Tab.0.center" timestamp="1611646418431">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="197" key="GridCell.Tab.0.center/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611571559757" />
-    <state width="1559" height="197" key="GridCell.Tab.0.left" timestamp="1611571559757">
+    <state width="1559" height="341" key="GridCell.Tab.0.center/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611646418431" />
+    <state width="1559" height="341" key="GridCell.Tab.0.left" timestamp="1611646418431">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="197" key="GridCell.Tab.0.left/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611571559757" />
-    <state width="1559" height="197" key="GridCell.Tab.0.right" timestamp="1611571559757">
+    <state width="1559" height="341" key="GridCell.Tab.0.left/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611646418431" />
+    <state width="1559" height="341" key="GridCell.Tab.0.right" timestamp="1611646418431">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state width="1559" height="197" key="GridCell.Tab.0.right/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611571559757" />
-    <state x="691" y="298" width="609" height="264" key="MultipleFileMergeDialog" timestamp="1611327352631">
+    <state width="1559" height="341" key="GridCell.Tab.0.right/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611646418431" />
+    <state x="288" y="298" width="1013" height="264" key="MultipleFileMergeDialog" timestamp="1611583760582">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="691" y="298" width="609" height="264" key="MultipleFileMergeDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327352631" />
-    <state x="968" y="121" key="RollbackChangesDialog" timestamp="1611327334618">
+    <state x="288" y="298" width="1013" height="264" key="MultipleFileMergeDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611583760582" />
+    <state x="968" y="121" key="RollbackChangesDialog" timestamp="1611583692573">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="968" y="121" key="RollbackChangesDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327334618" />
-    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611571616023">
+    <state x="968" y="121" key="RollbackChangesDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611583692573" />
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1611583789479">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="393" y="163" key="Vcs.Push.Dialog.v2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611571616023" />
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611583789479" />
     <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862@0.0.1603.862" timestamp="1611413949957" />
     <state x="514" y="165" width="574" height="582" key="find.popup" timestamp="1611571284461">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="514" y="165" width="574" height="582" key="find.popup/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611571284460" />
-    <state x="597" y="143" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611327341988">
+    <state x="597" y="143" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611583703568">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="597" y="143" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611327341988" />
+    <state x="597" y="143" key="git4idea.branch.GitSmartOperationDialog/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611583703568" />
     <state x="457" y="196" width="672" height="677" key="run.anything.popup" timestamp="1611319830613">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="457" y="196" width="672" height="677" key="run.anything.popup/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611319830613" />
+    <state x="464" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1611646319949">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="464" y="180" width="672" height="678" key="search.everywhere.popup/-1920.0.1603.862/0.0.1603.862@0.0.1603.862" timestamp="1611646319949" />
   </component>
 </project>
