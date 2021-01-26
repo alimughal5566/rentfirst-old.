@@ -16,7 +16,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="" />
+    <list default="true" id="f214f300-43e2-41e0-805e-9633854e2d89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/sass/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/styles/home.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
