@@ -239,18 +239,18 @@ section button {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: all 0.25s ease-in-out 0s;
-  -o-transition: all 0.25s ease-in-out 0s;
-  transition: all 0.25s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 section button:hover, section button:focus, section button:active {
   z-index: 1;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: all 0.25s ease-in-out 0s;
-  -o-transition: all 0.25s ease-in-out 0s;
-  transition: all 0.25s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .avail-status {
