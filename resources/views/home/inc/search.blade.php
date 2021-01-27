@@ -107,10 +107,10 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                             <form id="search" name="search" action="{{ lurl(trans('routes.v-search', $attr), $attr) }}"
                                   method="GET">
                                 {{--                                <div class="row m-0">--}}
-                                <div class="row m-0 d-flex justify-content-around">
+                                <div class="row m-0 d-flex justify-content-center justify-content-md-around">
 
                                     <div class="col-md-5 col-xs-12 search-col locationicon  search-location">
-                                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                                        <div class="px-2 w-100 position-relative d-flex align-items-center justify-content-center">
                                             <i class="far fa-map-marker-alt"></i>
                                             <input type="hidden" id="lSearch" name="l" value="">
                                             @if ($showMap)
@@ -128,7 +128,7 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                                     </div>
 
                                     <div class="col-md-5 col-xs-12 search-col  search-keyword">
-                                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                                        <div class="px-2 w-100 position-relative d-flex align-items-center justify-content-center">
                                             <i class="far fa-search"></i>
                                             <input type="text" name="q" class="form-control keyword has-icon"
                                                    placeholder="{{ t('What?') }}" value="">
@@ -136,7 +136,7 @@ if (file_exists(config('larapen.core.maps.path') . config('country.icode') . '.s
                                     </div>
 
                                     <div class="col-md-2 col-xs-12 search-col search-button">
-                                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                                        <div class="mt-md-0 px-2 w-100 position-relative d-flex align-items-center justify-content-center justify-content-md-start">
                                             <button class="btn btn-primary btn-search d-flex align-items-center">
                                                 {{--                                            <i class="icon-search"></i> --}}
                                                 <strong>{{ t('Find') }}</strong>

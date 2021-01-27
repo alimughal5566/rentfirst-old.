@@ -28,7 +28,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                     </div>
                 </div>
 
-                <div id="postsList" class="adds-wrapper noSideBar category-list mt-3">
+                <div id="postsList" class="adds-wrapper noSideBar category-list mt-1 mt-md-3">
                     <?php
                     foreach($posts as $key => $post):
                     if (empty($countries) or !$countries->has($post->country_code)) continue;
@@ -128,7 +128,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                             </div>
 
                             <div class="{{ $colPriceBox }} text-center price-box">
-                                <h4 class="item-price font-weight-normal pt-3 pb-0">
+                                <h4 class="item-price font-weight-normal text-center pt-1 pt-md-2 pb-0">
                                     @if (isset($liveCat->type))
                                         @if (!in_array($liveCat->type, ['not-salable']))
                                             @if ($post->price > 0)
@@ -143,12 +143,11 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                                 </h4>
                             </div>
 
-                            <div class="{{ $colDescBox }} add-desc-box">
-                                <div class="items-details px-2">
+                            <div class="{{ $colDescBox }} add-desc-box pt-0">
+                                <div class="items-details px-2 pt-0 pt-md-2">
                                     <h5 class="add-title text-center">
                                         <a href="{{ \App\Helpers\UrlGen::post($post) }}">{{ \Illuminate\Support\Str::limit($post->title, 70) }} </a>
                                     </h5>
-
                                     <span class="info-row d-flex flex-column align-items-center">
 										<span class="add-type business-ads tooltipHere" data-toggle="tooltip"
                                               data-placement="right" title="{{ $postType->name }}">
@@ -172,7 +171,6 @@ if (config('settings.listing.display_mode') == '.compact-view') {
 										</span>
 									</span>
                                 </div>
-
                                 @if (config('plugins.reviews.installed'))
                                     @if (view()->exists('reviews::ratings-list'))
                                         @include('reviews::ratings-list')

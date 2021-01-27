@@ -24,7 +24,7 @@ if (isset($city) and !empty($city)) {
                 <div class="row m-0 d-flex justify-content-around">
 
                     <div class="col-md-2 col-xs-12  search-col  search-cat">
-                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                        <div class="px-2 w-100 position-relative d-flex align-items-center justify-content-center">
                             <select name="c" id="catSearch" class="form-control selecter">
                                 <option value="" {{ ($qCategory=='') ? 'selected="selected"' : '' }}> {{ t('All Categories') }} </option>
                                 @if (isset($cats) and $cats->count() > 0)
@@ -37,7 +37,7 @@ if (isset($city) and !empty($city)) {
                     </div>
 
                     <div class="col-md-4 col-xs-12 search-col  locationicon  search-location">
-                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                        <div class="px-2 w-100 position-relative d-flex align-items-center justify-content-center">
                             <i class="far fa-map-marker-alt"></i>
                             <input type="text" id="locSearch" name="location"
                                    class="form-control locinput input-rel searchtag-input has-icon tooltipHere"
@@ -49,7 +49,7 @@ if (isset($city) and !empty($city)) {
                     </div>
 
                     <div class="col-md-4 col-xs-12 search-col search-keyword">
-                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                        <div class="px-2 w-100 position-relative d-flex align-items-center justify-content-center">
                             <i class="far fa-search"></i>
                             <input name="q" class="form-control keyword" type="text" placeholder="{{ t('What?') }}"
                                    value="{{ $keywords }}">
@@ -60,7 +60,7 @@ if (isset($city) and !empty($city)) {
                     <input type="hidden" id="rSearch" name="r" value="{{ $qAdmin }}">
 
                     <div class="col-md-2 col-xs-12 search-col search-button">
-                        <div class="px-2 w-100 position-relative d-flex align-items-center">
+                        <div class="px-2 w-100 position-relative d-flex align-items-center justify-content-center">
                             <button class="btn btn-primary btn-search d-flex align-items-center justify-content-center">
                                 {{--                            <i class="fa fa-search"></i> --}}
                                 <strong>{{ t('Find') }}</strong>

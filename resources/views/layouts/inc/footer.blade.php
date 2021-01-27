@@ -9,21 +9,21 @@ if (
     config('settings.social_link.pinterest_url') ||
     config('settings.social_link.instagram_url')
 ) {
-    $colClass1 = 'col-lg-3 col-md-3 col-sm-3 col-xs-6';
-    $colClass2 = 'col-lg-3 col-md-3 col-sm-3 col-xs-6';
-    $colClass3 = 'col-lg-3 col-md-3 col-sm-3 col-xs-12';
-    $colClass4 = 'col-lg-3 col-md-3 col-sm-3 col-xs-12';
+    $colClass1 = 'col-lg-3 col-md-3 col-6';
+    $colClass2 = 'col-lg-3 col-md-3 col-6';
+    $colClass3 = 'col-lg-3 col-md-3 col-6';
+    $colClass4 = 'col-lg-3 col-md-3 col-6';
 } else {
-    $colClass1 = 'col-lg-4 col-md-4 col-sm-4 col-xs-6';
-    $colClass2 = 'col-lg-4 col-md-4 col-sm-4 col-xs-6';
-    $colClass3 = 'col-lg-4 col-md-4 col-sm-4 col-xs-12';
-    $colClass4 = 'col-lg-4 col-md-4 col-sm-4 col-xs-12';
+    $colClass1 = 'col-lg-4 col-md-4 col-sm-4 col-6';
+    $colClass2 = 'col-lg-4 col-md-4 col-sm-4 col-6';
+    $colClass3 = 'col-lg-4 col-md-4 col-sm-4 col-12';
+    $colClass4 = 'col-lg-4 col-md-4 col-sm-4 col-12';
 }
 ?>
 <footer class="main-footer">
     <div class="footer-content border-0 py-0">
 
-        <div class="footer-title-wrap py-4">
+        <div class="footer-title-wrap d-none d-md-block py-4">
             <div class="container">
                 <div class="row">
                     @if (!config('settings.footer.hide_links'))
@@ -56,14 +56,14 @@ if (
             </div>
         </div>
 
-        <div class="footer-content-wrap py-4">
+        <div class="footer-content-wrap py-3 py-md-4">
             <div class="container">
                 <div class="row">
 
                     @if (!config('settings.footer.hide_links'))
                         <div class="{{ $colClass1 }}">
                             <div class="footer-col">
-                                {{--                            <h4 class="footer-title">{{ t('About us') }}</h4>--}}
+                                <h4 class="d-flex align-items-end d-md-none footer-title">{{ t('About us') }}</h4>
                                 <ul class="list-unstyled footer-nav">
                                     @if (isset($pages) and $pages->count() > 0)
                                         @foreach($pages as $page)
@@ -89,7 +89,7 @@ if (
 
                         <div class="{{ $colClass2 }}">
                             <div class="footer-col">
-                                {{--                            <h4 class="footer-title">{{ t('Contact & Sitemap') }}</h4>--}}
+                                <h4 class="d-flex align-items-end d-md-none footer-title">{{ t('Contact & Sitemap') }}</h4>
                                 <ul class="list-unstyled footer-nav">
                                     <li><a href="{{ lurl(trans('routes.contact')) }}"> {{ t('Contact') }} </a></li>
                                     <li><a href="{{ \App\Helpers\UrlGen::sitemap() }}"> {{ t('Sitemap') }} </a></li>
@@ -103,7 +103,7 @@ if (
 
                         <div class="{{ $colClass3 }}">
                             <div class="footer-col">
-                                {{--                            <h4 class="footer-title">{{ t('My Account') }}</h4>--}}
+                                <h4 class="d-flex align-items-end d-md-none footer-title">{{ t('My Account') }}</h4>
                                 <ul class="list-unstyled footer-nav">
                                     @if (!auth()->user())
                                         <li>
@@ -145,7 +145,7 @@ if (
                                     @if (config('settings.other.ios_app_url') or config('settings.other.android_app_url'))
                                         <div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
                                             <div class="mobile-app-content">
-                                                <h4 class="footer-title">{{ t('Mobile Apps') }}</h4>
+                                                <h4 class="d-flex align-items-end d-md-none footer-title">{{ t('Mobile Apps') }}</h4>
                                                 <div class="row ">
                                                     @if (config('settings.other.ios_app_url'))
                                                         <div class="col-xs-12 col-sm-6">
@@ -186,7 +186,7 @@ if (
                                         )
                                         <div class="col-sm-12 col-xs-6 col-xxs-12 no-padding-lg">
                                             <div class="{!! $footerSocialClass !!}">
-                                                {{--                                            <h4 class="footer-title {!! $footerSocialTitleClass !!}">{{ t('Follow us on') }}</h4>--}}
+                                                <h4 class="d-flex align-items-end d-md-none footer-title {!! $footerSocialTitleClass !!}">{{ t('Follow us on') }}</h4>
                                                 <ul class="list-unstyled list-inline footer-nav social-list-footer social-list-color footer-nav-inline">
                                                     @if (config('settings.social_link.facebook_page_url'))
                                                         <li>
@@ -210,7 +210,8 @@ if (
                                                     @endif
                                                     @if (config('settings.social_link.instagram_url'))
                                                         <li>
-                                                            <a class="icon-color " title="Instagram" data-placement="top"
+                                                            <a class="icon-color " title="Instagram"
+                                                               data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.instagram_url') }}"
                                                                data-original-title="Instagram">
@@ -240,7 +241,8 @@ if (
                                                     @endif
                                                     @if (config('settings.social_link.pinterest_url'))
                                                         <li>
-                                                            <a class="icon-color " title="Pinterest" data-placement="top"
+                                                            <a class="icon-color " title="Pinterest"
+                                                               data-placement="top"
                                                                data-toggle="tooltip"
                                                                href="{{ config('settings.social_link.pinterest_url') }}"
                                                                data-original-title="Pinterest">

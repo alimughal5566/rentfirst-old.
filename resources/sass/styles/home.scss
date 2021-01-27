@@ -6,6 +6,40 @@
 
 /*      Banner section      */
 
+.box-title {
+  background-color: transparent;
+}
+
+.list-check > li::after {
+  color: #69d161;
+}
+
+.reviews-widget {
+
+  .stars-wrap, .stars {
+    color: #69d161;
+
+    span, a {
+      color: #69d161;
+
+      &:hover, &:focus, &:active {
+        color: #df9833 !important;
+      }
+
+    }
+
+  }
+
+  button {
+
+    &.btn-success {
+      border-color: #69d161;
+      background-color: #69d161;
+    }
+
+  }
+}
+
 .wide-intro {
   background-position: center;
   background-repeat: no-repeat;
@@ -107,11 +141,13 @@
       .btn-search {
         border: 0.3rem solid transparent !important;
         border-radius: 1.5rem !important;
+        background: #69D161 !important;
         padding-left: 3rem;
         padding-right: 3rem;
 
         &:hover, &:focus, &:active, &.active {
           border: 0.3rem solid #69D161 !important;
+          background: #fff !important;
         }
 
       }
@@ -159,7 +195,7 @@
     margin: 0 0.75rem;
     border-radius: 1.5rem;
     border: 1px solid #ced4da;
-    box-shadow: 0 0.15rem 0.1rem 0.05rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
 
     .item {
       //min-width: unset;
@@ -171,7 +207,7 @@
         background: transparent !important;
 
         .item-carousel-thumb {
-          box-shadow: 0 0.2rem 0.1rem 0.05rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.1rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
           border-radius: 1.5rem;
           overflow: hidden;
           display: block;
@@ -205,7 +241,6 @@
       &:hover, &:focus, &:active, &.active {
 
         .item-carousel-thumb {
-          box-shadow: 0 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
           border-radius: 1.5rem;
           overflow: hidden;
           display: block;
@@ -262,7 +297,7 @@
     width: 18% !important;
     height: auto !important;
     border: 1px solid #ced4da !important;
-    box-shadow: 0.1rem 0.3rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
 
     &:hover, &:focus, &:active {
       background: transparent;
@@ -294,6 +329,16 @@
     .cornerRibbons {
       left: -32.5% !important;
       top: 7.5% !important;
+
+      a {
+        color: #fff !important;
+
+        &:hover, &:focus, &:active {
+          color: #636363 !important;
+        }
+
+      }
+
     }
 
     .photobox {
@@ -468,6 +513,7 @@
   .iconbox {
     @include d-flex;
     @include flex-column;
+    @include align-items-center;
 
     .iconbox-wrap-icon {
       @include d-flex;
@@ -487,6 +533,83 @@
 }
 
 .items-details-wrapper {
+
+  &.inner-box {
+    background: transparent;
+    border: none;
+
+    .posts-image {
+
+      & > .bx-wrapper {
+        margin-bottom: 0;
+
+        .bx-viewport {
+          border-radius: 1.5rem;
+        }
+
+        .bx-controls {
+
+          .bx-controls-direction {
+
+            .bx-prev, .bx-next {
+
+              &.disabled {
+                display: block;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .product-view-thumb-wrapper {
+
+        .bx-wrapper {
+          max-width: 100% !important;
+          margin-bottom: 0;
+
+          .bx-viewport {
+            height: unset !important;
+            padding: 0 6px;
+
+            #bx-pager {
+
+              li {
+                min-height: 100px !important;
+                @include align-items-center;
+                @include d-flex;
+
+                a {
+
+                  &.thumb-item-link {
+                    border-radius: 1.5rem;
+                    box-shadow: 0.1rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+                    border: 0.3rem solid transparent !important;
+
+                    &:hover, &:focus, &:active {
+                      border: 0.3rem solid #69D161 !important;
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
 
   .content-footer {
 
@@ -524,11 +647,24 @@
   .ev-action {
 
     a {
-      color: #69D161 !important;
 
-      &:hover, &:focus, &:active, &.active {
-        color: #636363 !important;
+      &.btn-default {
+        color: #69D161 !important;
+
+        &:hover, &:focus, &:active, &.active {
+          color: #636363 !important;
+        }
+
       }
+
+      &.btn-success, &.btn-danger {
+        color: #fff !important;
+
+        &:hover, &:focus, &:active, &.active {
+        }
+
+      }
+
 
     }
 

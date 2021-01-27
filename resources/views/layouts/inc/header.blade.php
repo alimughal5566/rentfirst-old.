@@ -215,9 +215,9 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
     </nav>
     <div class="header-navigation ">
         <div class="container">
-            <div class="header-nav-wrap d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap position-relative py-0">
+            <div class="header-nav-wrap d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap position-relative pt-1 pb-2 pb-md-1">
 
-                <div class="dropdown position-md-unset">
+                <div class="order-1 dropdown position-md-unset">
                     <button class="btn dropdown-toggle font-weight-bold text-white text-uppercase" type="button"
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -226,7 +226,7 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                     <div class="dropdown-menu wp-100 p-0" aria-labelledby="dropdownMenuButton">
                         <div class="d-flex flex-wrap vertical-menu px-3 py-1">
                             @foreach($main as $main_key => $main_category)
-                                <div class="wp-100 wp-md-20 main-item py-2">
+                                <div class="wp-100 wp-sm-50 wp-md-20 main-item py-2">
                                     <a class="dropdown-item"
                                        href="{{ \App\Helpers\UrlGen::category($main_category) }}">
                                         <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
@@ -252,7 +252,7 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                     </div>
                 </div>
 
-                <div class="navigation-special">
+                <div class="order-3 order-md-2 navigation-special">
                     @foreach($main->take(4) as $main_category)
                         <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
                             <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
@@ -261,7 +261,7 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                     @endforeach
                 </div>
 
-                <div class="category-add">
+                <div class="order-2 order-md-3 category-add">
                     <ul class="nav navbar-nav">
                         <li class="nav-item postadd">
                             @if (!auth()->check())

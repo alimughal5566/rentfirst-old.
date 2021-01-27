@@ -95,10 +95,9 @@
                             <small class="label label-default adlistingtype">{{ $post->postType->name }}</small>
                             @if ($post->featured==1 and !empty($post->latestPayment))
                                 @if (isset($post->latestPayment->package) and !empty($post->latestPayment->package))
-                                    <i class="icon-ok-circled tooltipHere"
-                                       style="color: {{ $post->latestPayment->package->ribbon }};" title=""
-                                       data-placement="right"
-                                       data-toggle="tooltip"
+                                    <i class="icon-ok-circled tooltipHere" title=""
+                                       style="color: {{ $post->latestPayment->package->ribbon }};"
+                                       data-placement="right" data-toggle="tooltip"
                                        data-original-title="{{ $post->latestPayment->package->short_name }}"></i>
                                 @endif
                             @endif
@@ -106,8 +105,8 @@
                         <span class="info-row">
 							<span class="date"><i class="icon-clock"> </i> {{ $post->created_at_ta }} </span> -&nbsp;
 							<span class="category">{{ (!empty($post->category->parent)) ? $post->category->parent->name : $post->category->name }}</span> -&nbsp;
-							<span class="item-location"><i
-                                        class="fas fa-map-marker-alt"></i> {{ $post->city->name }} </span> -&nbsp;
+							<span class="item-location">
+                                <i class="fas fa-map-marker-alt"></i> {{ $post->city->name }} </span> -&nbsp;
 							<span class="category">
 								<i class="icon-eye-3"></i>&nbsp;
 								{{ \App\Helpers\Number::short($post->visits) }} {{ trans_choice('global.count_views', getPlural($post->visits)) }}
@@ -128,8 +127,10 @@
                             @if (count($post->pictures) > 0)
                                 <ul class="bxslider">
                                     @foreach($post->pictures as $key => $image)
-                                        <li><img src="{{ imgUrl($image->filename, 'big') }}"
-                                                 alt="{{ $titleSlug . '-big-' . $key }}"></li>
+                                        <li>
+                                            <img src="{{ imgUrl($image->filename, 'big') }}"
+                                                 alt="{{ $titleSlug . '-big-' . $key }}">
+                                        </li>
                                     @endforeach
                                 </ul>
                                 <div class="product-view-thumb-wrapper">
@@ -146,8 +147,10 @@
                                 </div>
                             @else
                                 <ul class="bxslider">
-                                    <li><img src="{{ imgUrl(config('larapen.core.picture.default'), 'big') }}"
-                                             alt="img"></li>
+                                    <li>
+                                        <img src="{{ imgUrl(config('larapen.core.picture.default'), 'big') }}"
+                                             alt="img">
+                                    </li>
                                 </ul>
                                 <div class="product-view-thumb-wrapper">
                                     <ul id="bx-pager" class="product-view-thumb">
@@ -163,56 +166,52 @@
                         </div>
                         <!--posts-image-->
 
-
-                        @if (config('plugins.reviews.installed'))
-                            @if (view()->exists('reviews::ratings-single'))
-                                @include('reviews::ratings-single')
-                            @endif
-                        @endif
-
-
                         <div class="items-details">
                             <ul class="nav nav-tabs" id="itemsDetailsTabs" role="tablist">
+
                                 <li class="nav-item">
-                                    <a class="nav-link active"
-                                       id="item-details-tab"
-                                       data-toggle="tab"
-                                       href="#item-details"
-                                       role="tab"
-                                       aria-controls="item-details"
-                                       aria-selected="true"
-                                    >
-                                        <h4>{{ t('Ad Details') }}</h4>
+                                    <a class="nav-link active" id="item-description-tab" data-toggle="tab"
+                                       href="#item-description" role="tab" aria-controls="item-description"
+                                       aria-selected="true">
+                                        <h4>{{ 'Description' }}</h4>
                                     </a>
                                 </li>
-                                @if (config('plugins.reviews.installed'))
-                                    <li class="nav-item">
-                                        <a class="nav-link"
-                                           id="item-{{ config('plugins.reviews.name') }}-tab"
-                                           data-toggle="tab"
-                                           href="#tab-{{ config('plugins.reviews.name') }}"
-                                           role="tab"
-                                           aria-controls="item-{{ config('plugins.reviews.name') }}"
-                                           aria-selected="false"
-                                        >
-                                            <h4>
-                                                {{ trans('reviews::messages.Reviews') }}
-                                                @if (isset($rvPost) and !empty($rvPost))
-                                                    ({{ $rvPost->rating_count }})
-                                                @endif
-                                            </h4>
-                                        </a>
-                                    </li>
-                                @endif
+
+                                <li class="nav-item">
+                                    <a class="nav-link " id="item-details-tab" data-toggle="tab"
+                                       href="#item-details" role="tab" aria-controls="item-details"
+                                       aria-selected="false">
+                                        <h4>{{ 'Details' }}</h4>
+                                    </a>
+                                </li>
+
+
+                                {{--                                @if (config('plugins.reviews.installed'))--}}
+                                {{--                                    <li class="nav-item">--}}
+                                {{--                                        <a class="nav-link" data-toggle="tab"--}}
+                                {{--                                           id="item-{{ config('plugins.reviews.name') }}-tab"--}}
+                                {{--                                           href="#tab-{{ config('plugins.reviews.name') }}" role="tab"--}}
+                                {{--                                           aria-controls="item-{{ config('plugins.reviews.name') }}"--}}
+                                {{--                                           aria-selected="false">--}}
+                                {{--                                            <h4>--}}
+                                {{--                                                {{ trans('reviews::messages.Reviews') }}--}}
+                                {{--                                                @if (isset($rvPost) and !empty($rvPost))--}}
+                                {{--                                                    ({{ $rvPost->rating_count }})--}}
+                                {{--                                                @endif--}}
+                                {{--                                            </h4>--}}
+                                {{--                                        </a>--}}
+                                {{--                                    </li>--}}
+                                {{--                                @endif--}}
+
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content p-3 mb-3" id="itemsDetailsTabsContent">
-                                <div class="tab-pane show active" id="item-details" role="tabpanel"
-                                     aria-labelledby="item-details-tab">
+
+                                <div class="tab-pane show active" id="item-description" role="tabpanel"
+                                     aria-labelledby="item-description-tab">
                                     <div class="row">
                                         <div class="items-details-info col-md-12 col-sm-12 col-xs-12 enable-long-words from-wysiwyg">
-
                                             <div class="row">
                                                 <!-- Location -->
                                                 <div class="detail-line-lite col-md-6 col-sm-6 col-xs-6">
@@ -256,27 +255,7 @@
                                                 </div>
                                             </div>
 
-                                            <!-- Custom Fields -->
-                                        @include('post.inc.fields-values')
-
-                                        <!-- Tags -->
-                                            @if (!empty($post->tags))
-                                                <?php $tags = array_map('trim', explode(',', $post->tags)); ?>
-                                                @if (!empty($tags))
-                                                    <div class="row">
-                                                        <div class="tags col-12">
-                                                            <h4><i class="icon-tag"></i> {{ t('Tags') }}:</h4>
-                                                            @foreach($tags as $iTag)
-                                                                <a href="{{ \App\Helpers\UrlGen::tag($iTag) }}">
-                                                                    {{ $iTag }}
-                                                                </a>
-                                                            @endforeach
-                                                        </div>
-                                                    </div>
-                                            @endif
-                                        @endif
-
-                                        <!-- Actions -->
+                                            <!-- Actions -->
                                             <div class="row detail-line-action text-center">
                                                 <div class="col-4">
                                                     @if (auth()->check())
@@ -321,16 +300,46 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <br>&nbsp;<br>
+                                        <br>
                                     </div>
                                 </div>
 
-                                @if (config('plugins.reviews.installed'))
-                                    @if (view()->exists('reviews::comments'))
-                                        @include('reviews::comments')
-                                    @endif
-                                @endif
+                                <div class="tab-pane" id="item-details" role="tabpanel"
+                                     aria-labelledby="item-details-tab">
+                                    <div class="row">
+                                        <div class="items-details-info col-md-12 col-sm-12 col-xs-12 enable-long-words from-wysiwyg">
+
+                                            <!-- Custom Fields -->
+                                        @include('post.inc.fields-values')
+
+                                        <!-- Tags -->
+                                            @if (!empty($post->tags))
+                                                <?php $tags = array_map('trim', explode(',', $post->tags)); ?>
+                                                @if (!empty($tags))
+                                                    <div class="row">
+                                                        <div class="tags col-12">
+                                                            <h4><i class="icon-tag"></i> {{ t('Tags') }}:</h4>
+                                                            @foreach($tags as $iTag)
+                                                                <a href="{{ \App\Helpers\UrlGen::tag($iTag) }}">
+                                                                    {{ $iTag }}
+                                                                </a>
+                                                            @endforeach
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @endif
+
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                {{--                                @if (config('plugins.reviews.installed'))--}}
+                                {{--                                    @if (view()->exists('reviews::comments'))--}}
+                                {{--                                        @include('reviews::comments')--}}
+                                {{--                                    @endif--}}
+                                {{--                                @endif--}}
+
                             </div>
                             <!-- /.tab content -->
 
@@ -348,6 +357,32 @@
                                 {!! genPhoneNumberBtn($post) !!}
                             </div>
                         </div>
+
+
+                        <div class="items-details">
+
+                            <div class="mt-3">
+                                @if (config('plugins.reviews.installed'))
+                                    @if (view()->exists('reviews::ratings-single'))
+                                        @include('reviews::ratings-single')
+                                    @endif
+                                @endif
+                            </div>
+
+                            <h4>
+                                {{ trans('reviews::messages.Reviews') }}
+                                @if (isset($rvPost) and !empty($rvPost))
+                                    ({{ $rvPost->rating_count }})
+                                @endif
+                            </h4>
+
+                            @if (config('plugins.reviews.installed'))
+                                @if (view()->exists('reviews::comments'))
+                                    @include('reviews::comments')
+                                @endif
+                            @endif
+                        </div>
+
                     </div>
                     <!--/.items-details-wrapper-->
                 </div>

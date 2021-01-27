@@ -1,3 +1,5 @@
+@import "partials/mixin";
+
 /*      FOOTER      */
 
 footer {
@@ -8,17 +10,18 @@ footer {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 
-    .footer-title-wrap {
+    .footer-title {
+      color: #636363;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      min-height: 40px;
+      font-weight: bold;
+      font-size: 1rem;
+      font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;
+    }
 
-      .footer-title {
-        color: #636363;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        font-weight: bold;
-        font-size: 1.05rem;
-        font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;
-      }
+    .footer-title-wrap {
 
     }
 

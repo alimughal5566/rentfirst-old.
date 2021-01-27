@@ -115,7 +115,7 @@ if (!isset($cacheExpiration)) {
             </div>
 
             <div class="col-md-3 text-center price-box">
-                <h4 class="item-price pb-0 pt-3">
+                <h4 class="item-price text-center pb-0 pt-md-3 pt-0">
                     @if (isset($liveCat->type))
                         @if (!in_array($liveCat->type, ['not-salable']))
                             @if ($post->price > 0)
@@ -130,17 +130,16 @@ if (!isset($cacheExpiration)) {
                 </h4>
             </div>
 
-            <div class="col-md-7 add-desc-box">
-                <div class="items-details px-2">
+            <div class="col-md-7 add-desc-box pt-0">
+                <div class="items-details px-2 pt-0 pt-md-2">
                     <h5 class="add-title text-center">
                         <a href="{{ \App\Helpers\UrlGen::post($post) }}">{{ \Illuminate\Support\Str::limit($post->title, 70) }} </a>
                     </h5>
-
                     <span class="info-row d-flex flex-column align-items-center">
 						<span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right"
                               title="{{ $postType->name }}">
 							{{ strtoupper(mb_substr($postType->name, 0, 1)) }}
-						</span>&nbsp;
+						</span>
 						<span class="date"><i class="icon-clock"></i> {{ $post->created_at }} </span>
 						@if (isset($liveCatParentId) and isset($liveCatName))
                             <span class="category">
