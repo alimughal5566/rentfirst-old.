@@ -131,7 +131,7 @@ if (!isset($cacheExpiration)) {
             </div>
 
             <div class="col-md-7 add-desc-box pt-0">
-                <div class="items-details px-2 pt-0 pt-md-2">
+                <div class="items-details px-2 pt-0 pt-md-1">
                     <h5 class="add-title text-center">
                         <a href="{{ \App\Helpers\UrlGen::post($post) }}">{{ \Illuminate\Support\Str::limit($post->title, 70) }} </a>
                     </h5>
@@ -140,7 +140,8 @@ if (!isset($cacheExpiration)) {
                               title="{{ $postType->name }}">
 							{{ strtoupper(mb_substr($postType->name, 0, 1)) }}
 						</span>
-						<span class="date"><i class="icon-clock"></i> {{ $post->created_at }} </span>
+						<span class="date">
+                            <i class="icon-clock"></i> {{ $post->created_at }} </span>
 						@if (isset($liveCatParentId) and isset($liveCatName))
                             <span class="category">
 								<i class="icon-folder-circled"></i>&nbsp;

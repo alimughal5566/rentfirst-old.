@@ -170,21 +170,20 @@
                             <ul class="nav nav-tabs" id="itemsDetailsTabs" role="tablist">
 
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="item-description-tab" data-toggle="tab"
-                                       href="#item-description" role="tab" aria-controls="item-description"
-                                       aria-selected="true">
-                                        <h4>{{ 'Description' }}</h4>
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link " id="item-details-tab" data-toggle="tab"
+                                    <a class="nav-link active" id="item-details-tab" data-toggle="tab"
                                        href="#item-details" role="tab" aria-controls="item-details"
-                                       aria-selected="false">
+                                       aria-selected="true">
                                         <h4>{{ 'Details' }}</h4>
                                     </a>
                                 </li>
 
+                                <li class="nav-item">
+                                    <a class="nav-link" id="item-description-tab" data-toggle="tab"
+                                       href="#item-description" role="tab" aria-controls="item-description"
+                                       aria-selected="false">
+                                        <h4>{{ 'Description' }}</h4>
+                                    </a>
+                                </li>
 
                                 {{--                                @if (config('plugins.reviews.installed'))--}}
                                 {{--                                    <li class="nav-item">--}}
@@ -208,7 +207,37 @@
                             <!-- Tab panes -->
                             <div class="tab-content p-3 mb-3" id="itemsDetailsTabsContent">
 
-                                <div class="tab-pane show active" id="item-description" role="tabpanel"
+                                <div class="tab-pane show active" id="item-details" role="tabpanel"
+                                     aria-labelledby="item-details-tab">
+                                    <div class="row">
+                                        <div class="items-details-info col-md-12 col-sm-12 col-xs-12 enable-long-words from-wysiwyg">
+
+                                            <!-- Custom Fields -->
+                                        @include('post.inc.fields-values')
+
+                                        <!-- Tags -->
+                                            @if (!empty($post->tags))
+                                                <?php $tags = array_map('trim', explode(',', $post->tags)); ?>
+                                                @if (!empty($tags))
+                                                    <div class="row">
+                                                        <div class="tags col-12">
+                                                            <h4><i class="icon-tag"></i> {{ t('Tags') }}:</h4>
+                                                            @foreach($tags as $iTag)
+                                                                <a href="{{ \App\Helpers\UrlGen::tag($iTag) }}">
+                                                                    {{ $iTag }}
+                                                                </a>
+                                                            @endforeach
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @endif
+
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="item-description" role="tabpanel"
                                      aria-labelledby="item-description-tab">
                                     <div class="row">
                                         <div class="items-details-info col-md-12 col-sm-12 col-xs-12 enable-long-words from-wysiwyg">
@@ -299,36 +328,6 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <br>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane" id="item-details" role="tabpanel"
-                                     aria-labelledby="item-details-tab">
-                                    <div class="row">
-                                        <div class="items-details-info col-md-12 col-sm-12 col-xs-12 enable-long-words from-wysiwyg">
-
-                                            <!-- Custom Fields -->
-                                        @include('post.inc.fields-values')
-
-                                        <!-- Tags -->
-                                            @if (!empty($post->tags))
-                                                <?php $tags = array_map('trim', explode(',', $post->tags)); ?>
-                                                @if (!empty($tags))
-                                                    <div class="row">
-                                                        <div class="tags col-12">
-                                                            <h4><i class="icon-tag"></i> {{ t('Tags') }}:</h4>
-                                                            @foreach($tags as $iTag)
-                                                                <a href="{{ \App\Helpers\UrlGen::tag($iTag) }}">
-                                                                    {{ $iTag }}
-                                                                </a>
-                                                            @endforeach
-                                                        </div>
-                                                    </div>
-                                                @endif
-                                            @endif
-
                                         </div>
                                         <br>
                                     </div>

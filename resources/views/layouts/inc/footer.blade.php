@@ -151,7 +151,7 @@ if (
                                                         <div class="col-xs-12 col-sm-6">
                                                             <a class="app-icon" target="_blank"
                                                                href="{{ config('settings.other.ios_app_url') }}">
-                                                                <span class="hide-visually">{{ t('iOS app') }}</span>
+                                                                <span class="hide-visually">{{ t('iOS App') }}</span>
                                                                 <img src="{{ url('images/site/app-store-badge.svg') }}"
                                                                      alt="{{ t('Available on the App Store') }}">
                                                             </a>

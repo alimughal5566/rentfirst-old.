@@ -28,7 +28,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                     </div>
                 </div>
 
-                <div id="postsList" class="adds-wrapper noSideBar category-list mt-1 mt-md-3">
+                <div id="postsList" class="adds-wrapper noSideBar category-list mt-1 mt-md-2">
                     <?php
                     foreach($posts as $key => $post):
                     if (empty($countries) or !$countries->has($post->country_code)) continue;
@@ -144,7 +144,7 @@ if (config('settings.listing.display_mode') == '.compact-view') {
                             </div>
 
                             <div class="{{ $colDescBox }} add-desc-box pt-0">
-                                <div class="items-details px-2 pt-0 pt-md-2">
+                                <div class="items-details px-2 pt-0 pt-md-1">
                                     <h5 class="add-title text-center">
                                         <a href="{{ \App\Helpers\UrlGen::post($post) }}">{{ \Illuminate\Support\Str::limit($post->title, 70) }} </a>
                                     </h5>
