@@ -205,7 +205,7 @@
                             </ul>
 
                             <!-- Tab panes -->
-                            <div class="tab-content p-3 mb-3" id="itemsDetailsTabsContent">
+                            <div class="tab-content p-3 mt-4 mb-3" id="itemsDetailsTabsContent">
 
                                 <div class="tab-pane show active" id="item-details" role="tabpanel"
                                      aria-labelledby="item-details-tab">
@@ -426,7 +426,7 @@
                             <div class="card-content">
                                 <?php $evActionStyle = 'style="border-top: 0;"'; ?>
                                 @if (!auth()->check() or (auth()->check() and auth()->user()->getAuthIdentifier() != $post->user_id))
-                                    <div class="card-body text-left">
+                                    <div class="card-body pt-0 text-left">
                                         <div class="grid-col">
                                             <div class="col from">
                                                 <i class="fas fa-map-marker-alt"></i>
@@ -455,7 +455,7 @@
                                     <?php $evActionStyle = 'style="border-top: 1px solid #ddd;"'; ?>
                                 @endif
 
-                                <div class="ev-action" {!! $evActionStyle !!}>
+                                <div class="ev-action pt-0" {!! $evActionStyle !!}>
                                     @if (auth()->check())
                                         @if (auth()->user()->id == $post->user_id)
                                             <a href="{{ \App\Helpers\UrlGen::editPost($post) }}"
@@ -532,7 +532,7 @@
                         <div class="card sidebar-card">
                             <div class="card-header">{{ t('Safety Tips for Buyers') }}</div>
                             <div class="card-content">
-                                <div class="card-body text-left">
+                                <div class="card-body text-left pt-0">
                                     <ul class="list-check">
                                         <li> {{ t('Meet seller at a public place') }} </li>
                                         <li> {{ t('Check the item before you buy') }} </li>

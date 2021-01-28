@@ -52,8 +52,9 @@
                                             @foreach($field->default as $valueItem)
                                                 @continue(!isset($valueItem->value))
                                                 <div class="col-md-4 col-sm-6 col-12">
-                                                    <div class="m-0">
-                                                        <i class="fa fa-check"></i> {{ $valueItem->value }}
+                                                    <div class="m-0 feature-wrap">
+                                                        <i class="fa fa-check"></i>
+                                                        <span class="feature-span">{{ $valueItem->value }}</span>
                                                     </div>
                                                 </div>
                                             @endforeach

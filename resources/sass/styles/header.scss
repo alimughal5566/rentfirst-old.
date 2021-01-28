@@ -205,9 +205,14 @@ a {
 
       .dropdown-item {
         width: auto;
-        max-width: 24.5%;
+        max-width: 24%;
         color: #fff !important;
         font-family: Montserrat, "Roboto", Helvetica, Arial, sans-serif;
+
+        span {
+          display: block;
+          white-space: normal;
+        }
 
         &:hover, &:focus, &:active, &.active {
           background: transparent;

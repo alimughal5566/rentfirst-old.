@@ -103,16 +103,16 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                     @if (!auth()->check())
                         <li class="nav-item">
                             @if (config('settings.security.login_open_in_modal'))
-                                <a href="#quickLogin" class="nav-link" data-toggle="modal"><i
-                                            class="icon-user fa"></i> {{ t('Log In') }}</a>
+                                <a href="#quickLogin" class="nav-link" data-toggle="modal">
+                                    <i class="icon-user fa"></i> {{ t('Log In') }}</a>
                             @else
-                                <a href="{{ lurl(trans('routes.login')) }}" class="nav-link"><i
-                                            class="icon-user fa"></i> {{ t('Log In') }}</a>
+                                <a href="{{ lurl(trans('routes.login')) }}" class="nav-link">
+                                    <i class="icon-user fa"></i> {{ t('Log In') }}</a>
                             @endif
                         </li>
                         <li class="nav-item">
-                            <a href="{{ lurl(trans('routes.register')) }}" class="nav-link"><i
-                                        class="icon-user-add fa"></i> {{ t('Register') }}</a>
+                            <a href="{{ lurl(trans('routes.register')) }}" class="nav-link">
+                                <i class="icon-user-add fa"></i> {{ t('Register') }}</a>
                         </li>
                     @else
                         <li class="nav-item">

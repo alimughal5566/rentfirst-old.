@@ -6,6 +6,23 @@
 
 /*      Banner section      */
 
+#homepage {
+
+  .content-box {
+    border: unset;
+  }
+
+}
+
+.page-content {
+
+  .inner-box {
+    border: unset;
+    border-radius: 1.5rem !important;
+  }
+
+}
+
 .box-title {
   background-color: transparent;
 }
@@ -264,8 +281,9 @@
 
   .owl-nav {
 
-    &.disabled {
+    &,&.disabled {
       display: block;
+      width: 100%;
       margin: 0;
     }
 
@@ -641,6 +659,10 @@
 
       .tab-content {
         border: unset !important;
+        box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+
       }
 
     }
@@ -679,36 +701,6 @@
   display: block;
 }
 
-.sidebar-card {
-
-  .ev-action {
-
-    a {
-
-      &.btn-default {
-        color: #69D161 !important;
-
-        &:hover, &:focus, &:active, &.active {
-          color: #636363 !important;
-        }
-
-      }
-
-      &.btn-success, &.btn-danger {
-        color: #fff !important;
-
-        &:hover, &:focus, &:active, &.active {
-        }
-
-      }
-
-
-    }
-
-  }
-
-}
-
 /* /HOME */
 
 .items-details-info {
@@ -728,6 +720,72 @@
 
         &.detail-line-value {
           font-weight: bold;
+        }
+
+      }
+
+    }
+
+    .detail-line-inner {
+
+      .feature-wrap {
+
+        i {
+          color: #df9833;
+        }
+
+        .feature-span {
+          color: #69D161;
+          font-weight: bold;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+aside {
+
+  .card {
+
+    &.sidebar-card {
+      border-radius: 1.5rem;
+
+      .card-header {
+        background: transparent;
+        border-bottom: none;
+        border-radius: unset;
+      }
+
+      .card-content {
+        border-radius: unset;
+      }
+
+      .ev-action {
+
+        a {
+
+          &.btn-default {
+            color: #69D161 !important;
+
+            &:hover, &:focus, &:active, &.active {
+              color: #636363 !important;
+            }
+
+          }
+
+          &.btn-success, &.btn-danger {
+            color: #fff !important;
+
+            &:hover, &:focus, &:active, &.active {
+            }
+
+          }
+
+
         }
 
       }
