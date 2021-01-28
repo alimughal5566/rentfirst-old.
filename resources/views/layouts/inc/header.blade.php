@@ -240,8 +240,8 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
                                         @if(isset($main_category->Subcategories))
                                             @foreach($main_category->Subcategories->take(5) as $sub_main_category)
                                                 <span class="submenu-item">
-                                                        <a class="dropdown-item"
-                                                           href="{{ \App\Helpers\UrlGen::category($sub_main_category, 1) }}">{{$sub_main_category->name}}</a>
+                                                    <a class="dropdown-item"
+                                                       href="{{ \App\Helpers\UrlGen::category($sub_main_category, 1) }}">{{$sub_main_category->name}}</a>
                                                 </span>
                                             @endforeach
                                         @endif
@@ -254,8 +254,9 @@ $main = \App\Models\Category::with('Subcategories')->where('parent_id', 0)->wher
 
                 <div class="order-3 order-md-2 navigation-special">
                     @foreach($main->take(4) as $main_category)
-                        <a class="dropdown-item" href="{{ \App\Helpers\UrlGen::category($main_category) }}">
-                            <i class="{{ $main_category->icon_class ?? 'icon-ok' }}"></i>
+                        <a class="dropdown-item d-inline-flex align-items-center justify-content-center px-2"
+                           href="{{ \App\Helpers\UrlGen::category($main_category) }}">
+                            <i class="mr-2 {{ $main_category->icon_class ?? 'icon-ok' }}"></i>
                             <span class="font-weight-normal">{{$main_category->name}}</span>
                         </a>
                     @endforeach

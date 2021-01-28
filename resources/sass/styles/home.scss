@@ -14,15 +14,6 @@
 
 }
 
-.page-content {
-
-  .inner-box {
-    border: unset;
-    border-radius: 1.5rem !important;
-  }
-
-}
-
 .box-title {
   background-color: transparent;
 }
@@ -281,7 +272,7 @@
 
   .owl-nav {
 
-    &,&.disabled {
+    &, &.disabled {
       display: block;
       width: 100%;
       margin: 0;
@@ -747,6 +738,17 @@
 
 }
 
+.page-sidebar, .page-content {
+
+  .inner-box {
+    border: none;
+    border-radius: 1.5rem;
+    background: transparent;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  }
+
+}
+
 aside {
 
   .card {
@@ -790,6 +792,63 @@ aside {
 
       }
 
+    }
+
+  }
+
+  .inner-box {
+
+    .user-panel-sidebar {
+
+      .acc-list {
+
+        li {
+
+          a {
+            @include d-flex;
+            @include align-items-center;
+            @include justify-content-between;
+
+            &:hover, &:focus, &:active, &.active {
+              border-radius: 0.75rem;
+            }
+
+          }
+
+        }
+
+      }
+
+      .collapse-box {
+        margin-bottom: 0;
+
+        &:first-child {
+
+          .collapse-title {
+            padding-top: 0;
+          }
+
+        }
+
+        .collapse-title {
+          border-top: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.page-content {
+
+  .inner-box {
+
+    .title-2 {
+      margin: 5px 0 15px;
+      padding: 0 0 15px;
     }
 
   }

@@ -136,7 +136,6 @@ a.btn.btn-add-listing:hover, a.btn.btn-add-listing:focus, a.btn.btn-add-listing:
 }
 .header .header-navigation .navigation-special .dropdown-item span {
   display: block;
-  white-space: normal;
 }
 .header .header-navigation .navigation-special .dropdown-item:hover, .header .header-navigation .navigation-special .dropdown-item:focus, .header .header-navigation .navigation-special .dropdown-item:active, .header .header-navigation .navigation-special .dropdown-item.active {
   background: transparent;
@@ -174,11 +173,6 @@ a.btn.btn-add-listing:hover, a.btn.btn-add-listing:focus, a.btn.btn-add-listing:
 /*      Banner section      */
 #homepage .content-box {
   border: unset;
-}
-
-.page-content .inner-box {
-  border: unset;
-  border-radius: 1.5rem !important;
 }
 
 .box-title {
@@ -653,6 +647,14 @@ a.btn.btn-add-listing:hover, a.btn.btn-add-listing:focus, a.btn.btn-add-listing:
   font-weight: bold;
 }
 
+.page-sidebar .inner-box, .page-content .inner-box {
+  border: none;
+  border-radius: 1.5rem;
+  background: transparent;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
 aside .card.sidebar-card {
   border-radius: 1.5rem;
 }
@@ -673,6 +675,35 @@ aside .card.sidebar-card .ev-action a.btn-default:hover, aside .card.sidebar-car
 aside .card.sidebar-card .ev-action a.btn-success, aside .card.sidebar-card .ev-action a.btn-danger {
   color: #fff !important;
 }
+aside .inner-box .user-panel-sidebar .acc-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+aside .inner-box .user-panel-sidebar .acc-list li a:hover, aside .inner-box .user-panel-sidebar .acc-list li a:focus, aside .inner-box .user-panel-sidebar .acc-list li a:active, aside .inner-box .user-panel-sidebar .acc-list li a.active {
+  border-radius: 0.75rem;
+}
+aside .inner-box .user-panel-sidebar .collapse-box {
+  margin-bottom: 0;
+}
+aside .inner-box .user-panel-sidebar .collapse-box:first-child .collapse-title {
+  padding-top: 0;
+}
+aside .inner-box .user-panel-sidebar .collapse-box .collapse-title {
+  border-top: none;
+}
+
+.page-content .inner-box .title-2 {
+  margin: 5px 0 15px;
+  padding: 0 0 15px;
+}
+
 /*      VARIABLES      */
 /*      VARIABLES      */
 /*      FOOTER      */

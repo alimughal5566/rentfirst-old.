@@ -23,23 +23,23 @@ if (
 <footer class="main-footer">
     <div class="footer-content border-0 py-0">
 
-        <div class="footer-title-wrap d-none d-md-block py-4">
+        <div class="footer-title-wrap d-none d-md-block py-3">
             <div class="container">
                 <div class="row">
                     @if (!config('settings.footer.hide_links'))
                         <div class="{{ $colClass1 }}">
                             <div class="footer-col">
-                                <h4 class="footer-title">{{ t('About us') }}</h4>
+                                <h4 class="footer-title d-flex align-items-center">{{ t('About us') }}</h4>
                             </div>
                         </div>
                         <div class="{{ $colClass2 }}">
                             <div class="footer-col">
-                                <h4 class="footer-title">{{ t('Contact & Sitemap') }}</h4>
+                                <h4 class="footer-title d-flex align-items-center">{{ t('Contact & Sitemap') }}</h4>
                             </div>
                         </div>
                         <div class="{{ $colClass3 }}">
                             <div class="footer-col">
-                                <h4 class="footer-title">{{ t('My Account') }}</h4>
+                                <h4 class="footer-title d-flex align-items-center">{{ t('My Account') }}</h4>
                             </div>
                         </div>
                         <div class="{{ $colClass4 }}">
@@ -48,7 +48,7 @@ if (
                             $footerSocialTitleClass = '';
                             ?>
                             <div class="{!! $footerSocialClass !!}">
-                                <h4 class="footer-title {!! $footerSocialTitleClass !!}">{{ t('Follow us on') }}</h4>
+                                <h4 class="footer-title d-flex align-items-center {!! $footerSocialTitleClass !!}">{{ t('Follow us on') }}</h4>
                             </div>
                         </div>
                     @endif
