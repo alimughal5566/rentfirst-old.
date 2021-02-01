@@ -172,12 +172,12 @@ a {
                 a {
 
                   &.dropdown-item {
-                    color: #636363;
+                    color: #636363 !important;
                     white-space: normal;
 
                     &:hover, &:focus, &:active, &.active {
+                      color: #df9833 !important;
                       background: transparent;
-                      color: #69D161;
                     }
 
                   }

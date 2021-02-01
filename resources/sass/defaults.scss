@@ -62,98 +62,6 @@ a:hover, a:focus, a:active {
   @include mix.shadow-dark-2;
 }
 
-.btn {
-
-  &:hover, &:focus, &:active {
-    @include mix.noshadow;
-  }
-
-  &.btn-filter {
-    color: color.$tertiary;
-    background-color: transparent !important;
-    border-color: transparent !important;
-
-    &:hover, &:focus, &:active {
-      color: color.$primary;
-      border-color: transparent !important;
-    }
-
-  }
-
-  &.btn-gray {
-    @include mix.button-hover(color.$gray);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-revert-hover(color.$gray);
-    }
-
-  }
-
-  &.btn-gray-revert {
-    @include mix.button-revert-hover(color.$gray);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-hover(color.$gray);
-    }
-
-  }
-
-  &.btn-primary {
-    @include mix.button-hover(color.$primary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-revert-hover(color.$primary);
-    }
-
-  }
-
-  &.btn-primary-revert {
-    @include mix.button-revert-hover(color.$primary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-hover(color.$primary);
-    }
-
-  }
-
-  &.btn-secondary {
-    @include mix.button-hover(color.$secondary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-revert-hover(color.$secondary);
-    }
-
-  }
-
-  &.btn-secondary-revert {
-    @include mix.button-revert-hover(color.$secondary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-hover(color.$secondary);
-    }
-
-  }
-
-  &.btn-tertiary {
-    @include mix.button-hover(color.$tertiary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-revert-hover(color.$tertiary);
-    }
-
-  }
-
-  &.btn-tertiary-revert {
-    @include mix.button-revert-hover(color.$tertiary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-hover(color.$tertiary);
-    }
-
-  }
-
-}
-
 .section-padding {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -266,6 +174,79 @@ a:hover, a:focus, a:active {
 
 }
 
+.form-check {
+
+  .form-check-input {
+    margin-top: 0;
+  }
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 25px;
+    z-index: 99999;
+  }
+
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before,
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+  }
+
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 4px;
+    background: #69D161;
+    border: 1px solid #69D161;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+  }
+
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+}
+
 .custom-select {
   position: relative;
   width: 100%;
@@ -274,6 +255,98 @@ a:hover, a:focus, a:active {
   &:hover, &:focus, &:active {
     @include mix.noshadow;
     border-color: color.$primary;
+  }
+
+}
+
+.btn {
+
+  &:hover, &:focus, &:active {
+    @include mix.noshadow;
+  }
+
+  &.btn-filter {
+    color: color.$tertiary;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    &:hover, &:focus, &:active {
+      color: color.$primary;
+      border-color: transparent !important;
+    }
+
+  }
+
+  &.btn-gray {
+    @include mix.button-hover(color.$gray);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-revert-hover(color.$gray);
+    }
+
+  }
+
+  &.btn-gray-revert {
+    @include mix.button-revert-hover(color.$gray);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-hover(color.$gray);
+    }
+
+  }
+
+  &.btn-primary {
+    @include mix.button-hover(color.$primary);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-revert-hover(color.$primary);
+    }
+
+  }
+
+  &.btn-primary-revert {
+    @include mix.button-revert-hover(color.$primary);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-hover(color.$primary);
+    }
+
+  }
+
+  &.btn-secondary {
+    @include mix.button-hover(color.$secondary);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-revert-hover(color.$secondary);
+    }
+
+  }
+
+  &.btn-secondary-revert {
+    @include mix.button-revert-hover(color.$secondary);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-hover(color.$secondary);
+    }
+
+  }
+
+  &.btn-tertiary {
+    @include mix.button-hover(color.$tertiary);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-revert-hover(color.$tertiary);
+    }
+
+  }
+
+  &.btn-tertiary-revert {
+    @include mix.button-revert-hover(color.$tertiary);
+
+    &:hover, &:focus, &:active {
+      @include mix.button-hover(color.$tertiary);
+    }
+
   }
 
 }
@@ -325,10 +398,47 @@ section {
 
 /*      /DEFAULTS      */
 
+.badge {
+
+  &.badge-success {
+    background: #69D161 !important;
+    color: #fff !important;
+  }
+
+}
+
 .skin-green {
 
   .btn-success, .btn-warning, .btn-danger, .btn-info, .btn-default, .btn-border, .btn-fb, .btn-tw, .btn-lkin {
     color: #fff !important;
+  }
+
+  .btn-success {
+    background: #69D161 !important;
+
+    &:hover, &:focus, &:active, &.active {
+      background: transparent !important;
+      border-color: #df9833 !important;
+      color: #df9833 !important;
+    }
+
+  }
+
+  .btn-primary {
+  }
+
+  .btn-secondary {
+  }
+
+  .btn-default {
+    color: #69D161 !important;
+
+    &:hover, &:focus, &:active, &.active {
+      background: transparent !important;
+      border-color: #df9833 !important;
+      color: #df9833 !important;
+    }
+
   }
 
   .pricetag {
